@@ -1,0 +1,55 @@
+.character-guide {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid #646cff;
+  border-radius: 12px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.character-guide h2 {
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.character-guide p {
+  line-height: 1.8;
+  color: #ddd;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.character-guide button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.character-guide button:hover {
+  background-color: #535bf2;
+  transform: scale(1.05);
+}
+
+.character-guide button:focus,
+.character-guide button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
