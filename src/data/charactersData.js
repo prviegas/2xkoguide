@@ -183,8 +183,8 @@ export const charactersData = [
             name: 'Hikari',
             description: '',
             socials: {
-              twitter: 'https://twitter.com/player2',
-              twitch: 'https://twitch.tv/player2'
+              twitter: 'https://x.com/HikariNYC',
+              twitch: 'https://t.co/4sYjxDdnAn'
             },
             highlights: [
               { id: 'K6YIcxSAKz8' },
@@ -196,8 +196,9 @@ export const charactersData = [
             name: 'Player3',
             description: 'description',
             socials: {
+              twitter: 'https://x.com/HikariNYC',
               youtube: 'https://youtube.com/@player3',
-              twitch: 'https://twitch.tv/player3'
+              twitch: 'https://twitch.tv/player3',
             }
           }
         ]
