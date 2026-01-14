@@ -516,4 +516,101 @@
   .video-list-thumbnail {
     width: 100px;
   }
+  
+  .teams-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Team Synergies Styles */
+.teams-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-card {
+  background: linear-gradient(135deg, #252729 0%, #2d2f31 100%);
+  border: 1px solid #3a3c3e;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  border-color: #bbdf5d;
+  box-shadow: 0 4px 12px rgba(187, 223, 93, 0.2);
+  transform: translateY(-4px);
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.team-header h4 {
+  color: #bbdf5d;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.fuse-badge {
+  background: linear-gradient(135deg, #bbdf5d 0%, #a8cc4a 100%);
+  color: #1b1d1f;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.fuse-badge.double-down {
+  background: #6970fc;
+  color: #fff;
+}
+
+.fuse-badge.assist {
+  background: #07dbe7;
+  color: #1b1d1f;
+}
+
+.fuse-badge.juggernaut {
+  background: #fb393c;
+  color: #fff;
+}
+
+.fuse-badge.sidekick {
+  background: #fd4d79;
+  color: #fff;
+}
+
+.fuse-badge.freestyle {
+  background: #febd00;
+  color: #1b1d1f;
+}
+
+.team-explanation {
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+.team-videos-section {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #3a3c3e;
+}
+
+.team-videos-section h5 {
+  color: #bbdf5d;
+  margin: 0 0 1rem 0;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
 }

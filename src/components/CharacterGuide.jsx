@@ -3,6 +3,7 @@ import './CharacterGuide.css'
 import KeyMovesTab from './KeyMovesTab'
 import TopPlayersTab from './TopPlayersTab'
 import MatchupsTab from './MatchupsTab'
+import TeamSynergiesTab from './TeamSynergiesTab'
 
 function CharacterGuide({ character, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
@@ -43,6 +44,8 @@ function CharacterGuide({ character, onClose }) {
           <TopPlayersTab tabData={currentTab} />
         ) : currentTab.id === 'matchups' ? (
           <MatchupsTab tabData={currentTab} />
+        ) : currentTab.id === 'team_synergies' ? (
+          <TeamSynergiesTab tabData={currentTab} />
         ) : (
           <p>{currentTab.content}</p>
         )}

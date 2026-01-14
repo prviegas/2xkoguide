@@ -153,7 +153,34 @@ export const charactersData = [
       {
         id: 'team_synergies',
         title: 'Team Synergies/Suggestions',
-        content: 'Track your ghost position for ultimate timing. Use W preemptively for zone control. Proc passive for movement speed in skirmishes. Play around cooldowns aggressively. Use ultimate for resets or escapes.'
+        description: 'Discover powerful team compositions and how to maximize Ekko\'s potential with different partners.',
+        teams: [
+          {
+            pairing: 'Teemo or Jinx',
+            fuseType: 'Double Down',
+            explanation: 'Using Teemo\'s or Jinx\'s supers with double down clears the way for Ekko to get in safely',
+            videos: [
+              { id: 'F3x1-NNy6h4' },
+              { id: 'GHhFvO0TAW0' }
+            ]
+          },
+          {
+            pairing: 'Warwick',
+            fuseType: '2x Assist',
+            explanation: 'Very easy to build full bloodlust for Warwick with timewinder loops',
+            videos: [
+              { id: 'mR92xVB7sT0' }
+            ]
+          },
+          {
+            pairing: 'Yasuo',
+            fuseType: 'Freestyle',
+            explanation: 'Simply the best 2 characters in the game put together as of right now. Not much interesting sinergy but very strong all around',
+            videos: [
+              { id: 'mR92xVB7sT0' }
+            ]
+          },
+        ]
       },
       {
         id: 'matchups',
