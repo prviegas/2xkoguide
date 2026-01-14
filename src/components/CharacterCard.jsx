@@ -4,7 +4,7 @@ function CharacterCard({ character, onClick }) {
   return (
     <div className="character-card" onClick={() => onClick(character)}>
       <div className="character-icon">
-        {character.name[0]}
+        <img src={`../../public/champion-pics/${character.name}1.png`} alt={character.name} />
       </div>
       <h3>{character.name}</h3>
     </div>
