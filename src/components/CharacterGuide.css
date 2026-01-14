@@ -26,6 +26,11 @@
   margin-bottom: 1.5rem;
 }
 
+.guide-header h2 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
 .character-guide h2 {
   color: #bbdf5d;
   margin: 0;

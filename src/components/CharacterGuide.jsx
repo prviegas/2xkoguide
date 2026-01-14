@@ -21,7 +21,7 @@ function CharacterGuide({ character, onClose }) {
   return (
     <div className="character-guide">
       <div className="guide-header">
-        <h2>{character.name} Guide</h2>
+        <h2>{character.name.toUpperCase()}</h2>
         <button className="close-button" onClick={onClose}>✕</button>
       </div>
       
