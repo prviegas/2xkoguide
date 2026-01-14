@@ -166,12 +166,10 @@ export const charactersData = [
 
         ],
         combos: [
-          { purpose: 'BnB', numericNotation: 'M -> H -> S2 -> S2 -> S1 + L -> 2H -> S1 -> 2S2 -> {2H} -> jump forward -> {j.H} -> small delay -> j.S1 -> S2 -> H -> 2H', notation: 'Basic BnB', notationImage: '/key-moves-notation/ekko/ekko1.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Corner Carry', numericNotation: '5L 5L 5M 5H S2 2L 5M 5H 236H', notation: 'Rewind Combo', notationImage: '/key-moves-notation/ekko/ekko2.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Side Swap', numericNotation: 'M -> H -> 2H -> j.M -> j.H -> j.S2 -> dash -> L -> M -> H -> 2H -> j.H -> j.S2', notation: 'Air Starter', notationImage: '/key-moves-notation/ekko/ekko3.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Jump In', numericNotation: '5M 5H 236L S2 5M 5H 236H', notation: 'Medium Confirm', notationImage: '/key-moves-notation/ekko/ekko4.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Corner Combo', numericNotation: '2H j.L j.M j.H j.S2 2L 5M 236H', notation: 'Anti-Air Route', notationImage: '/key-moves-notation/ekko/ekko5.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Fury', numericNotation: 'j.66 j.2H 5L 5L 5M 5H S2 5M 236H', notation: 'Crossup Combo', notationImage: '/key-moves-notation/ekko/ekko6.png', video: 'videos/ekko/illaekko.mp4' }
+          { purpose: 'BnB', numericNotation: 'M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] d.j.S1 S2 H 2T', notationImage: '/key-moves-notation/ekko/ekko1.png', video: 'videos/ekko/illaekko.mp4' },
+          { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko5.png', video: 'videos/ekko/illaekko.mp4' },
+          { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko3.png', video: 'videos/ekko/illaekko.mp4' },
+          { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko2.png', video: 'videos/ekko/illaekko.mp4' },
         ]
       },
       {
