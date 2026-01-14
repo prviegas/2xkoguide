@@ -1,10 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './CharacterGuide.css'
 
 function CharacterGuide({ character, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
 
+  useEffect(() => {
+    setActiveTab(0)
+  }, [character])
+
   if (!character) return null
+  if (!character.tabs || character.tabs.length === 0) return null
+
+  const currentTab = character.tabs[activeTab] || character.tabs[0]
 
   return (
     <div className="character-guide">
@@ -26,8 +33,8 @@ function CharacterGuide({ character, onClose }) {
       </div>
 
       <div className="tab-content">
-        <h3>{character.tabs[activeTab].title}</h3>
-        <p>{character.tabs[activeTab].content}</p>
+        <h3>{currentTab.title}</h3>
+        <p>{currentTab.content}</p>
       </div>
     </div>
   )
