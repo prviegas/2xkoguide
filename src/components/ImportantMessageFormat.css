@@ -1,0 +1,56 @@
+/* start of file
+   File: src/components/ImportantMessageFormat.css
+   Purpose: Formatting for Important Message component
+*/
+
+/* Base style (mobile-first) */
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* responsive large text */
+  font-size: clamp(1.2rem, 3vw, 2rem);
+
+  /* responsive vertical padding */
+  padding: clamp(12px, 2.5vw, 32px);
+
+  z-index: 1000;
+}
+
+/* Optional: extra spacing to prevent content being hidden under the bar */
+@media (min-width: 600px) {
+  body {
+    padding-top: clamp(48px, 6vw, 80px);
+  }
+}
+
+/* Color variants */
+.notification-bar.info {
+  background: #e20909;
+  color: #ffffff;
+}
+
+.notification-bar.warning {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+.notification-bar.error {
+  background: #f8d7da;
+  color: #842029;
+}
+
+/* Explicit small-screen override (optional if you want custom mobile sizes) */
+@media (max-width: 600px) {
+  .notification-bar {
+    font-size: 1.2rem; /* keeps mobile text not too big */
+    padding: 16px;     /* mobile height */
+  }
+}
