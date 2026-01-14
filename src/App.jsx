@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar'
 import CharacterGrid from './components/CharacterGrid'
 import CharacterGuide from './components/CharacterGuide'
 import { charactersData } from './data/charactersData'
+import logo from './img/2XKO-Outline-logo-external.png'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -29,7 +30,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>2XKO Character Guide</h1>
+      <div className="logo-container">
+        <img src={logo} alt="2XKO Logo" className="logo" />
+      </div>
+      <h1>Character Guide</h1>
       
       <SearchBar value={searchTerm} onChange={handleSearch} />
       

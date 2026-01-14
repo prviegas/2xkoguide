@@ -7,16 +7,16 @@
   max-width: 500px;
   padding: 1rem;
   font-size: 1.1rem;
-  border: 2px solid #646cff;
-  border-radius: 8px;
-  background-color: #1a1a1a;
+  border: 2px solid #bbdf5d;
+  border-radius: 0;
+  background-color: #1b1d1f;
   color: white;
   outline: none;
   transition: border-color 0.3s;
 }
 
 .search-bar:focus {
-  border-color: #535bf2;
+  border-color: #9bc147;
 }
 
 .search-bar::placeholder {

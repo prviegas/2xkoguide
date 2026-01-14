@@ -1,30 +1,30 @@
 .character-card {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, #1b1d1f 0%, #2a2c2e 100%);
   border: 2px solid #333;
-  border-radius: 12px;
+  border-radius: 0;
   padding: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .character-card:hover {
-  border-color: #646cff;
+  border-color: #bbdf5d;
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(100, 108, 255, 0.3);
+  box-shadow: 0 5px 20px rgba(187, 223, 93, 0.3);
 }
 
 .character-icon {
   width: 80px;
   height: 80px;
   margin: 0 auto 1rem;
-  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
-  border-radius: 50%;
+  background: linear-gradient(135deg, #bbdf5d 0%, #9bc147 100%);
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: #1b1d1f;
 }
 
 .character-card h3 {
