@@ -1,7 +1,7 @@
 import CharacterCard from './CharacterCard'
 import './CharacterGrid.css'
 
-function CharacterGrid({ characters, onCharacterClick }) {
+function CharacterGrid({ characters, onCharacterClick, selectedCharacter }) {
   return (
     <div className="characters-grid">
       {characters.map(character => (
@@ -9,6 +9,7 @@ function CharacterGrid({ characters, onCharacterClick }) {
           key={character.id}
           character={character}
           onClick={onCharacterClick}
+          isSelected={selectedCharacter?.id === character.id}
         />
       ))}
     </div>

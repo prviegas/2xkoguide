@@ -142,3 +142,44 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
+.notation-help-btn {
+  border-radius: 0;
+  border: 0px;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: #bbdf5d;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.notation-help-btn:hover {
+  background-color: #bbdf5d;
+  color: #1b1d1f;
+  transform: scale(1.02);
+  box-shadow: 0 2px 10px rgba(187, 223, 93, 0.3);
+}
+
+.notation-help-btn i {
+  font-size: 1.1em;
+}
+
+.notation-header-icon {
+  cursor: pointer;
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  opacity: 0.8;
+  transition: all 0.25s;
+}
+
+.notation-header-icon:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  color: #d4f57e;
+}

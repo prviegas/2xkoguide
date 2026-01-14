@@ -39,7 +39,8 @@ function App() {
       
       <CharacterGrid 
         characters={filteredCharacters} 
-        onCharacterClick={handleCharacterClick} 
+        onCharacterClick={handleCharacterClick}
+        selectedCharacter={selectedCharacter}
       />
 
       <CharacterGuide 

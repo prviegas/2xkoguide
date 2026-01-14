@@ -33,7 +33,14 @@ function KeyMovesTab({ character, tabData }) {
       <table className="moves-table">
         <thead>
           <tr>
-            <th>Numeric Notation</th>
+            <th>
+              Numeric Notation{' '}
+              <i 
+                className="fas fa-question-circle notation-header-icon" 
+                onClick={() => setIsCheatsheetOpen(true)}
+                title="Learn numpad notation"
+              ></i>
+            </th>
             <th>2XKO Notation</th>
             <th>Description</th>
             <th>Video</th>

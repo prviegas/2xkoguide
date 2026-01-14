@@ -49,7 +49,14 @@ function SoloCombosTab({ character, tabData }) {
           <thead>
             <tr>
               <th>Purpose</th>
-              <th>Numeric Notation</th>
+              <th>
+                Numeric Notation{' '}
+                <i 
+                  className="fas fa-question-circle notation-header-icon" 
+                  onClick={() => setIsCheatsheetOpen(true)}
+                  title="Learn numpad notation"
+                ></i>
+              </th>
               <th>2XKO Notation</th>
               <th>Video</th>
             </tr>
