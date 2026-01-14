@@ -159,7 +159,49 @@ export const charactersData = [
         id: 'matchups',
         title: 'Matchups',
         content: 'Strong Against: Squishy burst mages, immobile targets. Weak Against: Tanks, sustained damage. Tips: Ultimate is both offensive and defensive. Bait abilities before committing. Use mobility to dodge skillshots. Time W for maximum impact.'
-      }
+      },
+      {
+        id: 'top_players',
+        title: 'Top Players to Watch',
+        description: 'Learn from the best Ekko players in the competitive scene.',
+        players: [
+          {
+            name: 'SonicFox',
+            description: 'description',
+            socials: {
+              twitter: 'https://twitter.com/SonicFox',
+              youtube: 'https://www.youtube.com/@SonicFox5000',
+              twitch: 'http://www.twitch.tv/sonicfox'
+            },
+            highlights: [
+              { id: 'dQw4w9WgXcQ', title: 'Ekko Combo Showcase' },
+              { id: 'dQw4w9WgXcQ', title: 'Tournament Highlights' },
+              { id: 'dQw4w9WgXcQ', title: 'Advanced Tech Guide' }
+            ]
+          },
+          {
+            name: 'Hikari',
+            description: 'description',
+            socials: {
+              twitter: 'https://twitter.com/player2',
+              twitch: 'https://twitch.tv/player2'
+            },
+            highlights: [
+              { id: 'dQw4w9WgXcQ', title: 'Best Ekko Plays' },
+              { id: 'dQw4w9WgXcQ', title: 'Ranked Gameplay' },
+              { id: 'dQw4w9WgXcQ', title: 'Character Guide' }
+            ]
+          },
+          {
+            name: 'Player3',
+            description: 'description',
+            socials: {
+              youtube: 'https://youtube.com/@player3',
+              twitch: 'https://twitch.tv/player3'
+            }
+          }
+        ]
+      },
     ]
   },
   {

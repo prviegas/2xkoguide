@@ -256,3 +256,198 @@
 .character-guide button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* Top Players Styles */
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.player-card {
+  background: linear-gradient(135deg, #252729 0%, #2d2f31 100%);
+  border: 1px solid #3a3c3e;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.player-card:hover {
+  border-color: #bbdf5d;
+  box-shadow: 0 4px 12px rgba(187, 223, 93, 0.2);
+  transform: translateY(-4px);
+}
+
+.player-card h4 {
+  color: #bbdf5d;
+  margin: 0 0 0.8rem 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.player-card p {
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #3a3c3e;
+  color: #888;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  border-color: currentColor;
+}
+
+.social-link.twitter {
+  color: #1DA1F2;
+}
+
+.social-link.twitter:hover {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+.social-link.youtube {
+  color: #FF0000;
+}
+
+.social-link.youtube:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.social-link.twitch {
+  color: #9146FF;
+}
+
+.social-link.twitch:hover {
+  background-color: #9146FF;
+  color: white;
+}
+
+/* Highlights Section */
+.highlights-section {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #3a3c3e;
+}
+
+.highlights-section h5 {
+  color: #bbdf5d;
+  margin: 0 0 1rem 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.video-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #3a3c3e;
+  transition: all 0.3s ease;
+  aspect-ratio: 16 / 9;
+}
+
+.video-thumbnail:hover {
+  border-color: #bbdf5d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(187, 223, 93, 0.3);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5em;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.video-thumbnail:hover .play-overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.video-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: #fff;
+  padding: 0.8rem 0.5rem 0.5rem;
+  font-size: 0.75em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.video-modal-content.youtube {
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.youtube-embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background: #000;
+}
+
+.youtube-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-thumbnails {
+    grid-template-columns: 1fr;
+  }
+  
+  .players-list {
+    grid-template-columns: 1fr;
+  }
+}
