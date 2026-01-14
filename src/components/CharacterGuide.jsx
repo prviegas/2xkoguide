@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import './CharacterGuide.css'
 import KeyMovesTab from './KeyMovesTab'
+import SoloCombosTab from './SoloCombosTab'
 import TopPlayersTab from './TopPlayersTab'
 import MatchupsTab from './MatchupsTab'
 import TeamSynergiesTab from './TeamSynergiesTab'
@@ -48,6 +49,8 @@ function CharacterGuide({ character, onClose }) {
         <h3>{currentTab.title}</h3>
         {currentTab.id === 'key_moves' ? (
           <KeyMovesTab character={character} tabData={currentTab} />
+        ) : currentTab.id === 'important_solo_combos' ? (
+          <SoloCombosTab character={character} tabData={currentTab} />
         ) : currentTab.id === 'top_players' ? (
           <TopPlayersTab tabData={currentTab} />
         ) : currentTab.id === 'matchups' ? (

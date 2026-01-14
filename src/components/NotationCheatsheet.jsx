@@ -1,8 +1,6 @@
 function NotationCheatsheet({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   return (
-    <div className="notation-cheatsheet-overlay" onClick={onClose}>
+    <div className={`notation-cheatsheet-overlay ${isOpen ? 'open' : ''}`} onClick={onClose}>
       <div className="notation-cheatsheet-content" onClick={(e) => e.stopPropagation()}>
         <div className="notation-cheatsheet-header">
           <h3>Numpad Notation Guide</h3>

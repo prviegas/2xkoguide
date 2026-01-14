@@ -166,6 +166,22 @@
   text-align: center;
 }
 
+.solo-combos-table .description-cell {
+  width: 20%;
+}
+
+.solo-combos-table .numeric-notation-cell {
+  width: 30%;
+}
+
+.solo-combos-table .notation-cell {
+  width: 40%;
+}
+
+.solo-combos-table .video-cell {
+  width: 10%;
+}
+
 .video-icon-btn {
   background: none;
   border: none;

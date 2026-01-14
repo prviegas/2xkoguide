@@ -2,7 +2,7 @@ import { useState } from 'react';
 import NotationCheatsheet from './NotationCheatsheet';
 import './NotationCheatsheet.css';
 
-function KeyMovesTab({ character, tabData }) {
+function SoloCombosTab({ character, tabData }) {
   const [videoModal, setVideoModal] = useState({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
   const [isCheatsheetOpen, setIsCheatsheetOpen] = useState(false)
 
@@ -14,9 +14,21 @@ function KeyMovesTab({ character, tabData }) {
     setVideoModal({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
   }
 
+  // Handle missing or malformed data
+  if (!tabData) {
+    return <p>No combo data available.</p>
+  }
+
+  if (tabData.content) {
+    return <p>{tabData.content}</p>
+  }
+
+  const description = Array.isArray(tabData.description) ? tabData.description : []
+  const combos = Array.isArray(tabData.combos) ? tabData.combos : []
+
   return (
     <>
-      {tabData.description.map((paragraph, index) => (
+      {description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
       
@@ -30,28 +42,31 @@ function KeyMovesTab({ character, tabData }) {
         </button>
       </div>
 
-      <table className="moves-table">
-        <thead>
-          <tr>
-            <th>Numeric Notation</th>
-            <th>2XKO Notation</th>
-            <th>Description</th>
-            <th>Video</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tabData.moves.map((move, index) => (
+      {combos.length === 0 ? (
+        <p>No combos available for this character yet.</p>
+      ) : (
+        <table className="moves-table solo-combos-table">
+          <thead>
+            <tr>
+              <th>Purpose</th>
+              <th>Numeric Notation</th>
+              <th>2XKO Notation</th>
+              <th>Video</th>
+            </tr>
+          </thead>
+          <tbody>
+            {combos.map((combo, index) => (
             <tr key={index}>
-              <td className="numeric-notation-cell">{move.numericNotation}</td>
+              <td className="description-cell">{combo.purpose || 'General combo'}</td>              
+              <td className="numeric-notation-cell">{combo.numericNotation}</td>
               <td className="notation-cell">
-                <img src={`.${move.notationImage}`} alt={move.notation} className="notation-image" />
+                <img src={`.${combo.notationImage}`} alt={combo.notation} className="notation-image" />
               </td>
-              <td className="description-cell">{move.description}</td>
               <td className="video-cell">
                 <button 
                   className="video-icon-btn"
-                  onClick={() => openVideoModal(move.video, move.notation, move.numericNotation)}
-                  title="View move demonstration"
+                  onClick={() => openVideoModal(combo.video, combo.notation, combo.numericNotation)}
+                  title="View combo demonstration"
                 >
                   <i className="fas fa-play-circle"></i>
                 </button>
@@ -60,6 +75,7 @@ function KeyMovesTab({ character, tabData }) {
           ))}
         </tbody>
       </table>
+      )}
 
       {videoModal.isOpen && (
         <div className="video-modal-overlay" onClick={closeVideoModal}>
@@ -90,4 +106,4 @@ function KeyMovesTab({ character, tabData }) {
   )
 }
 
-export default KeyMovesTab
+export default SoloCombosTab
