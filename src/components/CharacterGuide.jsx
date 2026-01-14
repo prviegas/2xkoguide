@@ -61,7 +61,9 @@ function CharacterGuide({ character, onClose }) {
                 {currentTab.moves.map((move, index) => (
                   <tr key={index}>
                     <td className="numeric-notation-cell">{move.numericNotation}</td>
-                    <td className="notation-cell">{move.notation}</td>
+                    <td className="notation-cell">
+                      <img src={move.notationImage} alt={move.notation} className="notation-image" />
+                    </td>
                     <td className="description-cell">{move.description}</td>
                     <td className="video-cell">
                       <button 
