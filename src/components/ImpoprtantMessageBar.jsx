@@ -5,7 +5,7 @@
   -Displays the Important Message bar if enabled
   */
 import "./ImportantMessageFormat.css";
-import { notification } from "./ImportantMessage.js";
+import { notification } from "./importantMessage.js";
 
 export default function NotificationBar() {
   if (!notification.enabled) return null;
