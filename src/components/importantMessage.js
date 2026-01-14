@@ -7,7 +7,7 @@
     - Type: The type of message, which can affect styling (info, warning, error)
   */
 export const notification = {
-  enabled: true, // ← toggle ON / OFF
+  enabled: false, // ← toggle ON / OFF
   message: "🚧 Scheduled maintenance tonight at 10pm",
   type: "info" // info | warning | error
 };
