@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import NotationCheatsheet from './NotationCheatsheet';
+import './NotationCheatsheet.css';
 
 function KeyMovesTab({ character, tabData }) {
   const [videoModal, setVideoModal] = useState({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
+  const [isCheatsheetOpen, setIsCheatsheetOpen] = useState(false)
 
   const openVideoModal = (videoUrl, moveName, numericNotation) => {
     setVideoModal({ isOpen: true, videoUrl, moveName, numericNotation })
@@ -16,6 +19,17 @@ function KeyMovesTab({ character, tabData }) {
       {tabData.description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
+      
+      <div style={{ marginBottom: '15px' }}>
+        <button 
+          className="notation-help-btn"
+          onClick={() => setIsCheatsheetOpen(true)}
+          title="Learn numpad notation"
+        >
+          <i className="fas fa-question-circle"></i> How to Read Notation
+        </button>
+      </div>
+
       <table className="moves-table">
         <thead>
           <tr>
@@ -67,6 +81,11 @@ function KeyMovesTab({ character, tabData }) {
           </div>
         </div>
       )}
+
+      <NotationCheatsheet 
+        isOpen={isCheatsheetOpen}
+        onClose={() => setIsCheatsheetOpen(false)}
+      />
     </>
   )
 }
