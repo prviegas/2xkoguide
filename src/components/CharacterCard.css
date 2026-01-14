@@ -14,18 +14,17 @@
 }
 
 .character-icon {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 1rem;
-  background: linear-gradient(135deg, #bbdf5d 0%, #9bc147 100%);
   border-radius: 0;
+  border: 2px solid #badf5d4d;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   font-weight: bold;
   color: #1b1d1f;
-  overflow: hidden;
 }
 
 .character-icon img {
