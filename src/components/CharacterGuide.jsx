@@ -36,7 +36,9 @@ function CharacterGuide({ character, onClose }) {
         <h3>{currentTab.title}</h3>
         {currentTab.id === 'key_moves' ? (
           <>
-            <p>{currentTab.description}</p>
+            {currentTab.description.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
             <table className="moves-table">
               <thead>
                 <tr>

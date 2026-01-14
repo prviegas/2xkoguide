@@ -6,7 +6,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Ahri is a versatile mage assassin who excels at controlling space and punishing mistakes. Her charm ability can turn the tide of battle, while her mobility allows for aggressive plays and safe escapes. Best suited for players who enjoy mind games and positioning.',
+        description: [
+          'Ahri is a versatile mage assassin who excels at controlling space and punishing mistakes.',
+          'Her charm ability can turn the tide of battle, while her mobility allows for aggressive plays and safe escapes.',
+          'Best suited for players who enjoy mind games and positioning.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Essence Theft - Gain bonus damage after landing abilities' },
           { numericNotation: '236P', notation: 'Q', description: 'Orb of Deception - Throws an orb that damages on the way out and back' },
@@ -40,7 +44,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Braum is a defensive tank who protects his team with his shield and crowd control. He excels at peeling for allies and setting up engagements. Best for players who enjoy supportive play and controlling enemy aggression.',
+        description: [
+          'Braum is a defensive tank who protects his team with his shield and crowd control.',
+          'He excels at peeling for allies and setting up engagements.',
+          'Best for players who enjoy supportive play and controlling enemy aggression.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Concussive Blows - Attacks apply stacks, stunning at 4 stacks' },
           { numericNotation: '236P', notation: 'Q', description: "Winter's Bite - Projectile that slows and applies passive" },
@@ -78,7 +86,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Darius is a juggernaut who dominates close-range combat through sustained damage and executions. He becomes increasingly dangerous as fights continue. Perfect for players who enjoy aggressive, in-your-face combat.',
+        description: [
+          'Darius is a juggernaut who dominates close-range combat through sustained damage and executions.',
+          'He becomes increasingly dangerous as fights continue.',
+          'Perfect for players who enjoy aggressive, in-your-face combat.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Hemorrhage - Bleeds enemies, gaining bonus AD at 5 stacks' },
           { numericNotation: '236P', notation: 'Q', description: 'Decimate - Swing axe in circle, heal from blade hits' },
@@ -116,13 +128,16 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Ekko is a time-manipulating skirmisher who excels at outplaying opponents. His ultimate provides a safety net for aggressive plays. Great for players who enjoy high-risk, high-reward gameplay and creative combos.',
+        description: [
+         
+        ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Z-Drive Resonance - Third hit deals bonus damage and grants movement speed' },
-          { numericNotation: '236P', notation: 'Q', description: 'Timewinder - Throws device that slows and returns' },
-          { numericNotation: '214P', notation: 'W', description: 'Parallel Convergence - Creates zone that slows and stuns enemies' },
-          { numericNotation: '623P', notation: 'E', description: 'Phase Dive - Dash and blink strike' },
-          { numericNotation: '632146P', notation: 'R', description: 'Chronobreak - Returns to past position, healing and damaging' }
+          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral' },
+          { numericNotation: '5M', notation: 'blabla', description: 'One of the best 5Ms in the game. Reaches far and fast' },
+          { numericNotation: 'S1 and 2S1', notation: 'blabla', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.' },
+          { numericNotation: 'Air dash', notation: 'blabla', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles' },
+          { numericNotation: 'j.2H', notation: 'blabla', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo' },
+        { numericNotation: 'j.6S1', notation: 'blabla', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile' }
         ]
       },
       {
@@ -154,7 +169,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Illaoi is a powerful juggernaut who dominates through zone control and area denial. She thrives when multiple enemies engage her. Best for players who enjoy standing their ground and turning ganks into victories.',
+        description: [
+          'Illaoi is a powerful juggernaut who dominates through zone control and area denial.',
+          'She thrives when multiple enemies engage her.',
+          'Best for players who enjoy standing their ground and turning ganks into victories.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Prophet of an Elder God - Tentacles spawn near Illaoi' },
           { numericNotation: '236P', notation: 'Q', description: 'Tentacle Smash - Slams tentacle in direction' },
@@ -192,7 +211,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Jinx is a hyperactive marksman who excels at ranged combat and area control. Her excitement mechanic makes her deadly when scoring takedowns. Perfect for players who love chaotic, explosive gameplay.',
+        description: [
+          'Jinx is a hyperactive marksman who excels at ranged combat and area control.',
+          'Her excitement mechanic makes her deadly when scoring takedowns.',
+          'Perfect for players who love chaotic, explosive gameplay.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Get Excited! - Gain massive movement speed on takedown' },
           { numericNotation: '236P', notation: 'Q', description: 'Switcheroo! - Toggle between Pow-Pow (attack speed) and Fishbones (range/AoE)' },
@@ -230,7 +253,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Vi is an aggressive diver who excels at picking off priority targets. Her ultimate provides reliable engage. Great for players who enjoy straightforward, impactful plays and diving backlines.',
+        description: [
+          'Vi is an aggressive diver who excels at picking off priority targets.',
+          'Her ultimate provides reliable engage.',
+          'Great for players who enjoy straightforward, impactful plays and diving backlines.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Blast Shield - Periodically gain shield' },
           { numericNotation: '236P', notation: 'Q', description: 'Vault Breaker - Charge and dash punch that knocks back' },
@@ -268,7 +295,11 @@ export const charactersData = [
       {
         id: 'key_moves',
         title: 'Key Moves',
-        description: 'Yasuo is a high-skill skirmisher who flows through combat with dashes and windwalls. He scales incredibly well and rewards mastery. Best for players who enjoy mechanical expression and outplay potential.',
+        description: [
+          'Yasuo is a high-skill skirmisher who flows through combat with dashes and windwalls.',
+          'He scales incredibly well and rewards mastery.',
+          'Best for players who enjoy mechanical expression and outplay potential.'
+        ],
         moves: [
           { numericNotation: '5P', notation: 'Passive', description: 'Way of the Wanderer - Shield from movement, doubled crit chance' },
           { numericNotation: '236P', notation: 'Q', description: 'Steel Tempest - Thrust that becomes tornado on third cast' },
