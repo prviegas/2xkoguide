@@ -26,7 +26,7 @@ function KeyMovesTab({ character, tabData }) {
           onClick={() => setIsCheatsheetOpen(true)}
           title="Learn numpad notation"
         >
-          <i className="fas fa-question-circle"></i> How to Read Notation
+          <i className="fas fa-question-circle"></i> How to Read Numeric Notation
         </button>
       </div>
 

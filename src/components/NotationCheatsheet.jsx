@@ -9,46 +9,57 @@ function NotationCheatsheet({ isOpen, onClose }) {
           <button className="close-button" onClick={onClose}>✕</button>
         </div>
         <div className="notation-cheatsheet-body">
-          <p>Numpad notation uses numbers to represent directions, based on a keyboard numpad layout:</p>
-          
-          <div className="numpad-grid">
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-up arrow rotate-315"></i>
-              <span className="number">7</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-up arrow"></i>
-              <span className="number">8</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-up arrow rotate-45"></i>
-              <span className="number">9</span>
+          <div className="notation-content-wrapper">
+            <div className="numpad-grid">
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-up arrow rotate-315"></i>
+                <span className="number">7</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-up arrow"></i>
+                <span className="number">8</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-up arrow rotate-45"></i>
+                <span className="number">9</span>
+              </div>
+              
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-left arrow"></i>
+                <span className="number">4</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-circle arrow neutral"></i>
+                <span className="number">5</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-right arrow"></i>
+                <span className="number">6</span>
+              </div>
+              
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-down arrow rotate-45"></i>
+                <span className="number">1</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-down arrow"></i>
+                <span className="number">2</span>
+              </div>
+              <div className="numpad-cell">
+                <i className="fas fa-arrow-down arrow rotate-315"></i>
+                <span className="number">3</span>
+              </div>
             </div>
             
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-left arrow"></i>
-              <span className="number">4</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-circle arrow neutral"></i>
-              <span className="number">5</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-right arrow"></i>
-              <span className="number">6</span>
-            </div>
-            
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-down arrow rotate-45"></i>
-              <span className="number">1</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-down arrow"></i>
-              <span className="number">2</span>
-            </div>
-            <div className="numpad-cell">
-              <i className="fas fa-arrow-down arrow rotate-315"></i>
-              <span className="number">3</span>
+            <div className="notation-explanation">
+              <p>The numeric notation system is based on a keyboard numpad.</p>
+              <p>Each number corresponds to a different direction, for example:</p>
+              <ul>
+                <li><strong>6</strong> = pressing forward</li>
+                <li><strong>3</strong> = pressing forward and down at the same time</li>
+                <li><strong>5</strong> = neutral position</li>
+                <li><strong>2S2</strong> = pressing down and S2 at the same time</li>
+              </ul>
             </div>
           </div>
         </div>
