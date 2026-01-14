@@ -1,5 +1,19 @@
 export const charactersData = [
-  {
+  /* start of file
+  Each character data is contained within its own object in this array.
+  Each character object has an id, name, and tabs array.
+  Each tab object contains id, title, description, and content or moves array.
+  Parameters Defined: 
+  id: Unique identifier for the character or tab under the character
+  title: Title of the tab section
+  description: Array of strings providing an overview or key points about the character or tab section. Also describes moves. 
+  numericNotation: Pure string version of the move notation
+  notation: Short notation label for the move (e.g., 'Q', 'W', 'E', 'R', 'Passive')
+  notationImage: 2xKo styled images used to make the notationn more visually appealing
+  video: Path to videos
+  content: String content for text-based tabs(placeholder). Can be replaced by correct section: moves, teams, etc
+  */
+  {// Ahri Data Starts Here
     id: 1,
     name: 'Ahri',
     tabs: [
@@ -36,8 +50,8 @@ export const charactersData = [
       },
 
     ]
-  },
-  {
+  },// Ahri Data Ends Here
+  {// Braum Data Starts Here
     id: 2,
     name: 'Braum',
     tabs: [
@@ -78,8 +92,8 @@ export const charactersData = [
         content: 'Strong Against: Projectile-heavy teams, dive compositions. Weak Against: Area denial, percent health damage. Tips: Angle shield to protect multiple allies. Track enemy cooldowns for optimal shield timing. Use terrain to funnel enemies.'
       }
     ]
-  },
-  {
+  },// Braum Data Ends Here
+  {// Darius Data Starts Here
     id: 3,
     name: 'Darius',
     tabs: [
@@ -120,8 +134,8 @@ export const charactersData = [
         content: 'Strong Against: Squishy melee, low mobility. Weak Against: Ranged kiting, high mobility. Tips: Use ghost/flash for gap closing. Punish enemy cooldowns. Be patient in stacking passive. Respect disengage tools.'
       }
     ]
-  },
-  {
+  },// Darius Data Ends Here
+  {// Ekko Data Starts Here
     id: 4,
     name: 'Ekko',
     tabs: [
@@ -231,8 +245,8 @@ export const charactersData = [
         ]
       },
     ]
-  },
-  {
+  },// Ekko Data Ends Here
+  {// Illaoi Data Starts Here
     id: 5,
     name: 'Illaoi',
     tabs: [
@@ -273,8 +287,8 @@ export const charactersData = [
         content: 'Strong Against: Melee divers, grouped enemies. Weak Against: Ranged poke, mobile champions. Tips: Don\'t chase, make them come to you. Bait enemies into tentacle zones. Ultimate timing is crucial. Respect enemy mobility.'
       }
     ]
-  },
-  {
+  },// Illaoi Data Ends Here
+  {// Jinx Data Starts Here
     id: 6,
     name: 'Jinx',
     tabs: [
@@ -315,8 +329,8 @@ export const charactersData = [
         content: 'Strong Against: Short-range teams, grouped enemies. Weak Against: Dive assassins, gap closers. Tips: Position behind frontline. Use traps defensively. Fishbones for sieging. Time excitement resets carefully.'
       }
     ]
-  },
-  {
+  },// Illaoi Data Ends Here
+  {// Vi Data Starts Here
     id: 7,
     name: 'Vi',
     tabs: [
@@ -357,8 +371,8 @@ export const charactersData = [
         content: 'Strong Against: Immobile carries, squishy mages. Weak Against: Tanks, heavy peel. Tips: Track enemy escapes before ulting. Use terrain with Q. Respect crowd control. Build according to enemy team.'
       }
     ]
-  },
-  {
+  },// Vi Data Ends Here
+  {// Yasuo Data Starts Here
     id: 8,
     name: 'Yasuo',
     tabs: [
@@ -399,5 +413,5 @@ export const charactersData = [
         content: 'Strong Against: Projectile-based champions, squishies. Weak Against: Point-and-click CC, hard engage. Tips: Track E cooldowns per target. Master Q timing. Wind Wall defensively first. Practice dash patterns.'
       }
     ]
-  }
-]
+  },// Yasuo Data Ends Here
+]//end of file
