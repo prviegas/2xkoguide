@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 function KeyMovesTab({ character, tabData }) {
   const [videoModal, setVideoModal] = useState({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
@@ -30,7 +30,7 @@ function KeyMovesTab({ character, tabData }) {
             <tr key={index}>
               <td className="numeric-notation-cell">{move.numericNotation}</td>
               <td className="notation-cell">
-                <img src={move.notationImage} alt={move.notation} className="notation-image" />
+                <img src={`.${move.notationImage}`} alt={move.notation} className="notation-image" />
               </td>
               <td className="description-cell">{move.description}</td>
               <td className="video-cell">

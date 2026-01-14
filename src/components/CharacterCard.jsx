@@ -5,7 +5,7 @@ function CharacterCard({ character, onClick, image }) {
     <div className="character-card" onClick={() => onClick(character)}>
       <div className="character-icon">
         <div>
-          <img src={image} alt={character.name} />
+          <img src={`./champion-pics/${character.name.toLowerCase()}1.png`} alt={character.name} />
         </div>
       </div>
       <h3>{character.name}</h3>
