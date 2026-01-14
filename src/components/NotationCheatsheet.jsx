@@ -58,6 +58,14 @@ function NotationCheatsheet({ isOpen, onClose }) {
                 <li><strong>5</strong> = neutral position</li>
                 <li><strong>2S2</strong> = pressing down and S2 at the same time</li>
               </ul>
+              <br></br>
+              <p>Additional notation:</p>
+              <ul>
+                <li><strong>[  ]</strong> = fully charged move</li>
+                <li><strong>{'{ }'}</strong> = partially charged move</li>
+                <li><strong>j.</strong> = jumping move</li>
+                <li><strong>d.</strong> = delay before pressing</li>
+              </ul>
             </div>
           </div>
         </div>

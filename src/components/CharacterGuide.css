@@ -264,6 +264,10 @@
   font-size: 1.3em;
 }
 
+.video-modal-header h3 span {
+  font-family: 'Courier New';
+}
+
 .video-player {
   width: 100%;
   display: block;

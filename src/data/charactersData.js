@@ -166,10 +166,10 @@ export const charactersData = [
 
         ],
         combos: [
-          { purpose: 'BnB', numericNotation: 'M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] d.j.S1 S2 H 2T', notationImage: '/key-moves-notation/ekko/ekko1.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko5.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko3.png', video: 'videos/ekko/illaekko.mp4' },
-          { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko2.png', video: 'videos/ekko/illaekko.mp4' },
+          { purpose: 'BnB', numericNotation: 'M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] j.d.S1 S2 H 2T', notationImage: '/key-moves-notation/ekko/ekko1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
+          { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko5.png', video: 'videos/ekko/ekko-combo-2.mp4' },
+          { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
+          { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/key-moves-notation/ekko/ekko2.png', video: 'videos/ekko/ekko-combo-4.mp4' },
         ]
       },
       {

@@ -72,7 +72,7 @@ function KeyMovesTab({ character, tabData }) {
         <div className="video-modal-overlay" onClick={closeVideoModal}>
           <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="video-modal-header">
-              <h3>{character.name} - {videoModal.numericNotation}</h3>
+              <h3><span>{videoModal.numericNotation}</span></h3>
               <button className="close-button" onClick={closeVideoModal}>✕</button>
             </div>
             <video 
