@@ -34,7 +34,31 @@ function CharacterGuide({ character, onClose }) {
 
       <div className="tab-content">
         <h3>{currentTab.title}</h3>
-        <p>{currentTab.content}</p>
+        {currentTab.id === 'key_moves' ? (
+          <>
+            <p>{currentTab.description}</p>
+            <table className="moves-table">
+              <thead>
+                <tr>
+                  <th>Numeric Notation</th>
+                  <th>2XKO Notation</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {currentTab.moves.map((move, index) => (
+                  <tr key={index}>
+                    <td className="numeric-notation-cell">{move.numericNotation}</td>
+                    <td className="notation-cell">{move.notation}</td>
+                    <td className="description-cell">{move.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        ) : (
+          <p>{currentTab.content}</p>
+        )}
       </div>
     </div>
   )
