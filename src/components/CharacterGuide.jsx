@@ -5,10 +5,49 @@ function CharacterGuide({ character, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
   const [videoModal, setVideoModal] = useState({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
   const [youtubeModal, setYoutubeModal] = useState({ isOpen: false, videoId: '', title: '', playerName: '' })
+  const [activeHighlights, setActiveHighlights] = useState({})
+  const [videoTitles, setVideoTitles] = useState({})
 
   useEffect(() => {
     setActiveTab(0)
   }, [character])
+
+  useEffect(() => {
+    const fetchVideoTitles = async () => {
+      if (!character?.tabs) return
+      
+      const topPlayersTab = character.tabs.find(tab => tab.id === 'top_players')
+      if (!topPlayersTab?.players) return
+
+      const titlePromises = []
+      const titleMap = {}
+
+      topPlayersTab.players.forEach(player => {
+        if (player.highlights) {
+          player.highlights.forEach(highlight => {
+            if (!titleMap[highlight.id]) {
+              titleMap[highlight.id] = null
+              titlePromises.push(
+                fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${highlight.id}&format=json`)
+                  .then(res => res.json())
+                  .then(data => {
+                    titleMap[highlight.id] = data.title
+                  })
+                  .catch(() => {
+                    titleMap[highlight.id] = highlight.title || 'Video'
+                  })
+              )
+            }
+          })
+        }
+      })
+
+      await Promise.all(titlePromises)
+      setVideoTitles(titleMap)
+    }
+
+    fetchVideoTitles()
+  }, [character, activeTab])
 
   const openVideoModal = (videoUrl, moveName, numericNotation) => {
     setVideoModal({ isOpen: true, videoUrl, moveName, numericNotation })
@@ -116,23 +155,55 @@ function CharacterGuide({ character, onClose }) {
                   {player.highlights && player.highlights.length > 0 && (
                     <div className="highlights-section">
                       <h5>Highlights</h5>
-                      <div className="video-thumbnails">
-                        {player.highlights.map((highlight, idx) => (
-                          <div 
-                            key={idx} 
-                            className="video-thumbnail"
-                            onClick={() => openYoutubeModal(highlight.id, highlight.title, player.name)}
-                          >
-                            <img 
-                              src={`https://img.youtube.com/vi/${highlight.id}/mqdefault.jpg`}
-                              alt={highlight.title}
-                            />
-                            <div className="play-overlay">
-                              <i className="fab fa-youtube"></i>
-                            </div>
-                            <div className="video-title">{highlight.title}</div>
+                      <div className="featured-video-container">
+                        <div 
+                          className="featured-video"
+                          onClick={() => window.open(`https://www.youtube.com/watch?v=${player.highlights[activeHighlights[index] || 0].id}`, '_blank', 'noopener,noreferrer')}
+                        >
+                          <img 
+                            src={`https://img.youtube.com/vi/${player.highlights[activeHighlights[index] || 0].id}/maxresdefault.jpg`}
+                            alt={videoTitles[player.highlights[activeHighlights[index] || 0].id] || player.highlights[activeHighlights[index] || 0].title}
+                          />
+                          <div className="play-overlay">
+                            <i className="fab fa-youtube"></i>
                           </div>
-                        ))}
+                        </div>
+                        <div className="video-title-featured">
+                          {videoTitles[player.highlights[activeHighlights[index] || 0].id] || player.highlights[activeHighlights[index] || 0].title || 'Loading...'}
+                        </div>
+                        {player.highlights.length > 1 && (
+                          <div className="video-list">
+                            {player.highlights.map((highlight, idx) => (
+                              idx !== (activeHighlights[index] || 0) && (
+                                <div
+                                  key={idx}
+                                  className="video-list-item"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    if (e.target.closest('.video-list-title') || e.target.closest('.video-list-thumbnail')) {
+                                      window.open(`https://www.youtube.com/watch?v=${highlight.id}`, '_blank', 'noopener,noreferrer');
+                                    } else {
+                                      setActiveHighlights({ ...activeHighlights, [index]: idx });
+                                    }
+                                  }}
+                                >
+                                  <div className="video-list-thumbnail" onClick={(e) => { e.stopPropagation(); window.open(`https://www.youtube.com/watch?v=${highlight.id}`, '_blank', 'noopener,noreferrer'); }}>
+                                    <img 
+                                      src={`https://img.youtube.com/vi/${highlight.id}/mqdefault.jpg`}
+                                      alt={videoTitles[highlight.id] || 'Video thumbnail'}
+                                    />
+                                    <div className="play-icon-small">
+                                      <i className="fab fa-youtube"></i>
+                                    </div>
+                                  </div>
+                                  <div className="video-list-title" onClick={(e) => { e.stopPropagation(); window.open(`https://www.youtube.com/watch?v=${highlight.id}`, '_blank', 'noopener,noreferrer'); }}>
+                                    {videoTitles[highlight.id] || highlight.title || 'Loading...'}
+                                  </div>
+                                </div>
+                              )
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}

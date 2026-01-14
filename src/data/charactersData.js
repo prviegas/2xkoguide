@@ -167,29 +167,29 @@ export const charactersData = [
         players: [
           {
             name: 'SonicFox',
-            description: 'description',
+            description: '',
             socials: {
               twitter: 'https://twitter.com/SonicFox',
               youtube: 'https://www.youtube.com/@SonicFox5000',
               twitch: 'http://www.twitch.tv/sonicfox'
             },
             highlights: [
-              { id: 'dQw4w9WgXcQ', title: 'Ekko Combo Showcase' },
-              { id: 'dQw4w9WgXcQ', title: 'Tournament Highlights' },
-              { id: 'dQw4w9WgXcQ', title: 'Advanced Tech Guide' }
+              { id: 'F3x1-NNy6h4' },
+              { id: 'GHhFvO0TAW0' },
+              { id: 'mR92xVB7sT0' }
             ]
           },
           {
             name: 'Hikari',
-            description: 'description',
+            description: '',
             socials: {
               twitter: 'https://twitter.com/player2',
               twitch: 'https://twitch.tv/player2'
             },
             highlights: [
-              { id: 'dQw4w9WgXcQ', title: 'Best Ekko Plays' },
-              { id: 'dQw4w9WgXcQ', title: 'Ranked Gameplay' },
-              { id: 'dQw4w9WgXcQ', title: 'Character Guide' }
+              { id: 'K6YIcxSAKz8' },
+              { id: '6dFSUmYA2Lw' },
+              { id: '4fIa3CZNLZI' }
             ]
           },
           {
