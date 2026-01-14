@@ -4,7 +4,7 @@
   -Imports formatting and message for the bar
   -Displays the Important Message bar if enabled
   */
-import "./importantMessageFormat.css";
+import "./ImportantMessageFormat.css";
 import { notification } from "./ImportantMessage.js";
 
 export default function NotificationBar() {
