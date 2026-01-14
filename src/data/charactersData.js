@@ -153,7 +153,7 @@ export const charactersData = [
       {
         id: 'team_synergies',
         title: 'Team Synergies/Suggestions',
-        description: 'Discover powerful team compositions and how to maximize Ekko\'s potential with different partners.',
+        description: '',
         teams: [
           {
             pairing: 'Teemo or Jinx',
@@ -161,7 +161,6 @@ export const charactersData = [
             explanation: 'Using Teemo\'s or Jinx\'s supers with double down clears the way for Ekko to get in safely',
             videos: [
               { id: 'F3x1-NNy6h4' },
-              { id: 'GHhFvO0TAW0' }
             ]
           },
           {
@@ -169,7 +168,8 @@ export const charactersData = [
             fuseType: '2x Assist',
             explanation: 'Very easy to build full bloodlust for Warwick with timewinder loops',
             videos: [
-              { id: 'mR92xVB7sT0' }
+              { id: 'gCDtZgLubqw' },
+              { id: 'EXbUrEpVoRw' }
             ]
           },
           {
@@ -177,7 +177,7 @@ export const charactersData = [
             fuseType: 'Freestyle',
             explanation: 'Simply the best 2 characters in the game put together as of right now. Not much interesting sinergy but very strong all around',
             videos: [
-              { id: 'mR92xVB7sT0' }
+              { id: '8qmI6OieGnI' }
             ]
           },
         ]
