@@ -5,6 +5,7 @@ import CharacterGrid from './components/CharacterGrid'
 import CharacterGuide from './components/CharacterGuide'
 import { charactersData } from './data/charactersData'
 import logo from './img/2XKO-Outline-logo-external.png'
+import ImpoprtantMessageBar from './components/ImpoprtantMessageBar'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div className="app">
+      {<ImpoprtantMessageBar/>}
       <div className="logo-container">
         <img src={logo} alt="2XKO Logo" className="logo" />
       </div>
