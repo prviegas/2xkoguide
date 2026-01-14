@@ -12,11 +12,11 @@ export const charactersData = [
           'Best suited for players who enjoy mind games and positioning.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Essence Theft - Gain bonus damage after landing abilities' },
-          { numericNotation: '236P', notation: 'Q', description: 'Orb of Deception - Throws an orb that damages on the way out and back' },
-          { numericNotation: '214P', notation: 'W', description: 'Fox-Fire - Summons flames that target nearby enemies' },
-          { numericNotation: '623P', notation: 'E', description: 'Charm - Skillshot that charms and damages the first enemy hit' },
-          { numericNotation: '632146P', notation: 'R', description: 'Spirit Rush - Dash multiple times with increased mobility' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Essence Theft - Gain bonus damage after landing abilities', video: '/videos/ahri-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Orb of Deception - Throws an orb that damages on the way out and back', video: '/videos/ahri-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Fox-Fire - Summons flames that target nearby enemies', video: '/videos/ahri-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Charm - Skillshot that charms and damages the first enemy hit', video: '/videos/ahri-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Spirit Rush - Dash multiple times with increased mobility', video: '/videos/ahri-r.mp4' }
         ]
       },
       {
@@ -50,11 +50,11 @@ export const charactersData = [
           'Best for players who enjoy supportive play and controlling enemy aggression.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Concussive Blows - Attacks apply stacks, stunning at 4 stacks' },
-          { numericNotation: '236P', notation: 'Q', description: "Winter's Bite - Projectile that slows and applies passive" },
-          { numericNotation: '214P', notation: 'W', description: 'Stand Behind Me - Dash to ally, granting armor' },
-          { numericNotation: '623P', notation: 'E', description: 'Unbreakable - Shield that blocks projectiles' },
-          { numericNotation: '632146P', notation: 'R', description: 'Glacial Fissure - Line knockup that creates a slow field' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Concussive Blows - Attacks apply stacks, stunning at 4 stacks', video: '/videos/braum-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: "Winter's Bite - Projectile that slows and applies passive", video: '/videos/braum-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Stand Behind Me - Dash to ally, granting armor', video: '/videos/braum-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Unbreakable - Shield that blocks projectiles', video: '/videos/braum-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Glacial Fissure - Line knockup that creates a slow field', video: '/videos/braum-r.mp4' }
         ]
       },
       {
@@ -92,11 +92,11 @@ export const charactersData = [
           'Perfect for players who enjoy aggressive, in-your-face combat.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Hemorrhage - Bleeds enemies, gaining bonus AD at 5 stacks' },
-          { numericNotation: '236P', notation: 'Q', description: 'Decimate - Swing axe in circle, heal from blade hits' },
-          { numericNotation: '214P', notation: 'W', description: 'Crippling Strike - Empowered attack that slows' },
-          { numericNotation: '623P', notation: 'E', description: 'Apprehend - Pull enemies and gain armor pen' },
-          { numericNotation: '632146P', notation: 'R', description: 'Noxian Guillotine - Execute that resets on kill' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Hemorrhage - Bleeds enemies, gaining bonus AD at 5 stacks', video: '/videos/darius-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Decimate - Swing axe in circle, heal from blade hits', video: '/videos/darius-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Crippling Strike - Empowered attack that slows', video: '/videos/darius-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Apprehend - Pull enemies and gain armor pen', video: '/videos/darius-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Noxian Guillotine - Execute that resets on kill', video: '/videos/darius-r.mp4' }
         ]
       },
       {
@@ -132,12 +132,12 @@ export const charactersData = [
          
         ],
         moves: [
-          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral' },
-          { numericNotation: '5M', notation: 'blabla', description: 'One of the best 5Ms in the game. Reaches far and fast' },
-          { numericNotation: 'S1 and 2S1', notation: 'blabla', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.' },
-          { numericNotation: 'Air dash', notation: 'blabla', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles' },
-          { numericNotation: 'j.2H', notation: 'blabla', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo' },
-        { numericNotation: 'j.6S1', notation: 'blabla', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile' }
+          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral', video: '../../public/videos/ekko/illaekko.mp4' },
+          { numericNotation: '5M', notation: 'blabla', description: 'One of the best 5Ms in the game. Reaches far and fast', video: '/videos/ekko-q.mp4' },
+          { numericNotation: 'S1 and 2S1', notation: 'blabla', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.', video: '/videos/ekko-w.mp4' },
+          { numericNotation: 'Air dash', notation: 'blabla', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles', video: '/videos/ekko-e.mp4' },
+          { numericNotation: 'j.2H', notation: 'blabla', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo', video: '/videos/ekko-r.mp4' },
+        { numericNotation: 'j.6S1', notation: 'blabla', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile', video: '/videos/ekko-special.mp4' }
         ]
       },
       {
@@ -175,11 +175,11 @@ export const charactersData = [
           'Best for players who enjoy standing their ground and turning ganks into victories.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Prophet of an Elder God - Tentacles spawn near Illaoi' },
-          { numericNotation: '236P', notation: 'Q', description: 'Tentacle Smash - Slams tentacle in direction' },
-          { numericNotation: '214P', notation: 'W', description: 'Harsh Lesson - Leap to target, nearby tentacles slam' },
-          { numericNotation: '623P', notation: 'E', description: 'Test of Spirit - Pulls enemy spirit, tentacles hit both' },
-          { numericNotation: '632146P', notation: 'R', description: 'Leap of Faith - Slams ground, summons tentacles' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Prophet of an Elder God - Tentacles spawn near Illaoi', video: '/videos/illaoi-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Tentacle Smash - Slams tentacle in direction', video: '/videos/illaoi-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Harsh Lesson - Leap to target, nearby tentacles slam', video: '/videos/illaoi-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Test of Spirit - Pulls enemy spirit, tentacles hit both', video: '/videos/illaoi-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Leap of Faith - Slams ground, summons tentacles', video: '/videos/illaoi-r.mp4' }
         ]
       },
       {
@@ -217,11 +217,11 @@ export const charactersData = [
           'Perfect for players who love chaotic, explosive gameplay.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Get Excited! - Gain massive movement speed on takedown' },
-          { numericNotation: '236P', notation: 'Q', description: 'Switcheroo! - Toggle between Pow-Pow (attack speed) and Fishbones (range/AoE)' },
-          { numericNotation: '214P', notation: 'W', description: 'Zap! - Long-range skillshot that slows' },
-          { numericNotation: '623P', notation: 'E', description: 'Flame Chompers! - Deploy traps that snare' },
-          { numericNotation: '632146P', notation: 'R', description: 'Super Mega Death Rocket! - Global execute' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Get Excited! - Gain massive movement speed on takedown', video: '/videos/jinx-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Switcheroo! - Toggle between Pow-Pow (attack speed) and Fishbones (range/AoE)', video: '/videos/jinx-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Zap! - Long-range skillshot that slows', video: '/videos/jinx-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Flame Chompers! - Deploy traps that snare', video: '/videos/jinx-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Super Mega Death Rocket! - Global execute', video: '/videos/jinx-r.mp4' }
         ]
       },
       {
@@ -259,11 +259,11 @@ export const charactersData = [
           'Great for players who enjoy straightforward, impactful plays and diving backlines.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Blast Shield - Periodically gain shield' },
-          { numericNotation: '236P', notation: 'Q', description: 'Vault Breaker - Charge and dash punch that knocks back' },
-          { numericNotation: '214P', notation: 'W', description: 'Denting Blows - Every third hit deals % health damage' },
-          { numericNotation: '623P', notation: 'E', description: 'Excessive Force - Empowered punches that hit in line' },
-          { numericNotation: '632146P', notation: 'R', description: 'Assault and Battery - Unstoppable charge that knocks up target' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Blast Shield - Periodically gain shield', video: '/videos/vi-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Vault Breaker - Charge and dash punch that knocks back', video: '/videos/vi-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Denting Blows - Every third hit deals % health damage', video: '/videos/vi-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Excessive Force - Empowered punches that hit in line', video: '/videos/vi-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Assault and Battery - Unstoppable charge that knocks up target', video: '/videos/vi-r.mp4' }
         ]
       },
       {
@@ -301,11 +301,11 @@ export const charactersData = [
           'Best for players who enjoy mechanical expression and outplay potential.'
         ],
         moves: [
-          { numericNotation: '5P', notation: 'Passive', description: 'Way of the Wanderer - Shield from movement, doubled crit chance' },
-          { numericNotation: '236P', notation: 'Q', description: 'Steel Tempest - Thrust that becomes tornado on third cast' },
-          { numericNotation: '214P', notation: 'W', description: 'Wind Wall - Blocks projectiles' },
-          { numericNotation: '623P', notation: 'E', description: 'Sweeping Blade - Dash through units' },
-          { numericNotation: '632146P', notation: 'R', description: 'Last Breath - Blinks to airborne enemies and slashes' }
+          { numericNotation: '5P', notation: 'Passive', description: 'Way of the Wanderer - Shield from movement, doubled crit chance', video: '/videos/yasuo-passive.mp4' },
+          { numericNotation: '236P', notation: 'Q', description: 'Steel Tempest - Thrust that becomes tornado on third cast', video: '/videos/yasuo-q.mp4' },
+          { numericNotation: '214P', notation: 'W', description: 'Wind Wall - Blocks projectiles', video: '/videos/yasuo-w.mp4' },
+          { numericNotation: '623P', notation: 'E', description: 'Sweeping Blade - Dash through units', video: '/videos/yasuo-e.mp4' },
+          { numericNotation: '632146P', notation: 'R', description: 'Last Breath - Blinks to airborne enemies and slashes', video: '/videos/yasuo-r.mp4' }
         ]
       },
       {

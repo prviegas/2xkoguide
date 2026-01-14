@@ -3,10 +3,19 @@ import './CharacterGuide.css'
 
 function CharacterGuide({ character, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
+  const [videoModal, setVideoModal] = useState({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
 
   useEffect(() => {
     setActiveTab(0)
   }, [character])
+
+  const openVideoModal = (videoUrl, moveName, numericNotation) => {
+    setVideoModal({ isOpen: true, videoUrl, moveName, numericNotation })
+  }
+
+  const closeVideoModal = () => {
+    setVideoModal({ isOpen: false, videoUrl: '', moveName: '', numericNotation: '' })
+  }
 
   if (!character) return null
   if (!character.tabs || character.tabs.length === 0) return null
@@ -45,6 +54,7 @@ function CharacterGuide({ character, onClose }) {
                   <th>Numeric Notation</th>
                   <th>2XKO Notation</th>
                   <th>Description</th>
+                  <th>Video</th>
                 </tr>
               </thead>
               <tbody>
@@ -53,6 +63,15 @@ function CharacterGuide({ character, onClose }) {
                     <td className="numeric-notation-cell">{move.numericNotation}</td>
                     <td className="notation-cell">{move.notation}</td>
                     <td className="description-cell">{move.description}</td>
+                    <td className="video-cell">
+                      <button 
+                        className="video-icon-btn"
+                        onClick={() => openVideoModal(move.video, move.notation, move.numericNotation)}
+                        title="View move demonstration"
+                      >
+                        <i className="fas fa-play-circle"></i>
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -62,6 +81,27 @@ function CharacterGuide({ character, onClose }) {
           <p>{currentTab.content}</p>
         )}
       </div>
+
+      {videoModal.isOpen && (
+        <div className="video-modal-overlay" onClick={closeVideoModal}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="video-modal-header">
+              <h3>{character.name} - {videoModal.numericNotation}</h3>
+              <button className="close-button" onClick={closeVideoModal}>✕</button>
+            </div>
+            <video 
+              controls 
+              autoPlay 
+              loop
+              className="video-player"
+              key={videoModal.videoUrl}
+            >
+              <source src={videoModal.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
