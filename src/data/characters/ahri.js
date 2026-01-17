@@ -18,11 +18,6 @@ export const ahri = {
         ]
       },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Essence Theft - Gain bonus damage after landing abilities. Q: Orb of Deception - Throws an orb that damages on the way out and back. W: Fox-Fire - Summons flames that target nearby enemies. E: Charm - Skillshot that charms and damages the first enemy hit. Ultimate: Spirit Rush - Dash multiple times with increased mobility.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Basic Combo: E → Q → W for confirmed damage. Advanced: R → E → Q → W → R for aggressive all-in. Escape: R → R → R to reposition safely. Poke: Q → W from safe distance. Team Fight: Position for multi-target Q, save E for priority targets.'

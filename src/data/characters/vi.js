@@ -19,11 +19,6 @@ export const vi = {
       ]
     },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Blast Shield - Periodically gain shield. Q: Vault Breaker - Charge and dash punch that knocks back. W: Denting Blows - Every third hit deals % health damage. E: Excessive Force - Empowered punches that hit in line. Ultimate: Assault and Battery - Unstoppable charge that knocks up target.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Engage: R → Auto → E → Q (charged). Burst: Q (full charge) → Auto → E → Auto → E. Peel: Q to interrupt → E → Auto. Chase: R → Auto until Q ready → Q. Quick Trade: Q (partial) → Auto → E → disengage.'

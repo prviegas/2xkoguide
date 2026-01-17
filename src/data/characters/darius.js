@@ -19,11 +19,6 @@ export const darius =  {
         ]
       },
       {
-        id: 'optimal_punish_starts',
-        title: 'Optimal Punish Starts',
-        content: 'Passive: Hemorrhage - Bleeds enemies, gaining bonus AD at 5 stacks. Q: Decimate - Swing axe in circle, heal from blade hits. W: Crippling Strike - Empowered attack that slows. E: Apprehend - Pull enemies and gain armor pen. Ultimate: Noxian Guillotine - Execute that resets on kill.'
-      },
-      {
         id: 'important_solo_combos',
         title: 'Important Solo Combos',
         content: 'All-in: E → W → Auto → Q (blade) → R. Stack Building: Auto → W → Auto → Q → Auto. Reset Chain: R → R → R on multiple low enemies. Zone Control: Q spam to keep enemies at bay. Trade: E → W → Auto → disengage.'

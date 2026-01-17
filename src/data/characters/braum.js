@@ -18,11 +18,6 @@ export const braum = {
         ]
       },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Concussive Blows - Attacks apply stacks, stunning at 4 stacks. Q: Winter\'s Bite - Projectile that slows and applies passive. W: Stand Behind Me - Dash to ally, granting armor. E: Unbreakable - Shield that blocks projectiles. Ultimate: Glacial Fissure - Line knockup that creates a slow field.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Engage: Q → Auto → W (to ally) → E (block retaliation). Peel: E (block) → Q → Auto until stun. Ultimate Setup: R → Q → Auto for extended CC. Team Support: W to endangered ally → E to block. Counter: Time E to block key abilities.'

@@ -18,11 +18,6 @@ export const ekko = {// Ekko Data Starts Here
         ]
       },
       {
-        id: 'optimal_punish_starts',
-        title: 'Optimal Punish Starts',
-        content: 'Passive: Z-Drive Resonance - Third hit deals bonus damage and grants movement speed. Q: Timewinder - Throws device that slows and returns. W: Parallel Convergence - Creates zone that slows and stuns enemies. E: Phase Dive - Dash and blink strike. Ultimate: Chronobreak - Returns to past position, healing and damaging.'
-      },
-      {
         id: 'important_solo_combos',
         title: 'Important Solo Combos',
         description: [

@@ -19,11 +19,6 @@ export const jinx = {
       ]
     },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Get Excited! - Gain massive movement speed on takedown. Q: Switcheroo! - Toggle between Pow-Pow (attack speed) and Fishbones (range/AoE). W: Zap! - Long-range skillshot that slows. E: Flame Chompers! - Deploy traps that snare. Ultimate: Super Mega Death Rocket! - Global execute.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Poke: Fishbones → W for long-range harass. Trap Setup: E forward → Fishbones AoE. Execution: W → R on low target. All-in: E between → Pow-Pow autos → W. Cleanup: Get Excited → Fishbones for safe damage.'

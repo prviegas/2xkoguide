@@ -19,11 +19,6 @@ export const illaoi = {
       ]
     },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Prophet of an Elder God - Tentacles spawn near Illaoi. Q: Tentacle Smash - Slams tentacle in direction. W: Harsh Lesson - Leap to target, nearby tentacles slam. E: Test of Spirit - Pulls enemy spirit, tentacles hit both. Ultimate: Leap of Faith - Slams ground, summons tentacles.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Harass: E → Q → W on spirit. All-in: R → W → Q → E → W. Multiple Enemies: R when grouped → W spam. Spirit Kill: E → Auto → Q → W → Q. Tentacle Rotation: W → Auto → Q → W.'

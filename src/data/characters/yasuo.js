@@ -19,11 +19,6 @@ export const yasuo = {
       ]
     },
     {
-      id: 'optimal_punish_starts',
-      title: 'Optimal Punish Starts',
-      content: 'Passive: Way of the Wanderer - Shield from movement, doubled crit chance. Q: Steel Tempest - Thrust that becomes tornado on third cast. W: Wind Wall - Blocks projectiles. E: Sweeping Blade - Dash through units. Ultimate: Last Breath - Blinks to airborne enemies and slashes.'
-    },
-    {
       id: 'important_solo_combos',
       title: 'Important Solo Combos',
       content: 'Basic: E → Q → E. Airblade: E → Q (tornado) → R → Q. Keyblade: E → Q → Flash → R. Beyblade: E in circles → Q spam → Tornado. Poke: E (in) → Q → E (out).'
