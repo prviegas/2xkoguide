@@ -72,7 +72,7 @@
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   z-index: 2;
 }
 
