@@ -521,11 +521,26 @@
   background: linear-gradient(135deg, #252729 0%, #2d2f31 100%);
   border: 1px solid #3a3c3e;
   border-top: none;
+  border-bottom: none;
   color: #bbdf5d;
-  padding: 0.8rem;
+  padding: 0.8rem 0.8rem 0.4rem;
   font-size: 0.95em;
   text-align: center;
   font-weight: 500;
+}
+
+.video-author-featured {
+  background: linear-gradient(135deg, #252729 0%, #2d2f31 100%);
+  border: 1px solid #3a3c3e;
+  border-top: none;
+  color: #888;
+  padding: 0.4rem 0.8rem 0.8rem;
+  font-size: 0.85em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
 .video-list {
@@ -592,6 +607,17 @@
   font-size: 0.9em;
   line-height: 1.4;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.video-list-author {
+  color: #888;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .video-list-item:hover .video-list-title {

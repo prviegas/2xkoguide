@@ -3,27 +3,32 @@ import { useState, useEffect } from 'react'
 function TeamSynergiesTab({ tabData }) {
   const [activeVideos, setActiveVideos] = useState({})
   const [videoTitles, setVideoTitles] = useState({})
+  const [videoAuthors, setVideoAuthors] = useState({})
 
   useEffect(() => {
-    const fetchVideoTitles = async () => {
+    const fetchVideoData = async () => {
       if (!tabData?.teams) return
 
-      const titlePromises = []
+      const fetchPromises = []
       const titleMap = {}
+      const authorMap = {}
 
       tabData.teams.forEach(team => {
         if (team.videos) {
           team.videos.forEach(video => {
             if (!titleMap[video.id]) {
               titleMap[video.id] = null
-              titlePromises.push(
+              authorMap[video.id] = null
+              fetchPromises.push(
                 fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${video.id}&format=json`)
                   .then(res => res.json())
                   .then(data => {
                     titleMap[video.id] = data.title
+                    authorMap[video.id] = data.author_name
                   })
                   .catch(() => {
                     titleMap[video.id] = video.title || 'Video'
+                    authorMap[video.id] = video.author || ''
                   })
               )
             }
@@ -31,11 +36,12 @@ function TeamSynergiesTab({ tabData }) {
         }
       })
 
-      await Promise.all(titlePromises)
+      await Promise.all(fetchPromises)
       setVideoTitles(titleMap)
+      setVideoAuthors(authorMap)
     }
 
-    fetchVideoTitles()
+    fetchVideoData()
   }, [tabData])
 
   const getFuseBadgeClass = (fuseType) => {
@@ -84,6 +90,11 @@ function TeamSynergiesTab({ tabData }) {
                   <div className="video-title-featured">
                     {videoTitles[team.videos[activeVideos[index] || 0].id] || team.videos[activeVideos[index] || 0].title || 'Loading...'}
                   </div>
+                  {videoAuthors[team.videos[activeVideos[index] || 0].id] && (
+                    <div className="video-author-featured">
+                      <i className="fas fa-user"></i> {videoAuthors[team.videos[activeVideos[index] || 0].id]}
+                    </div>
+                  )}
                   {team.videos.length > 1 && (
                     <div className="video-list">
                       {team.videos.map((video, idx) => (
@@ -111,6 +122,11 @@ function TeamSynergiesTab({ tabData }) {
                             </div>
                             <div className="video-list-title" onClick={(e) => { e.stopPropagation(); window.open(`https://www.youtube.com/watch?v=${video.id}`, '_blank', 'noopener,noreferrer'); }}>
                               {videoTitles[video.id] || video.title || 'Loading...'}
+                              {videoAuthors[video.id] && (
+                                <span className="video-list-author">
+                                  <i className="fas fa-user"></i> {videoAuthors[video.id]}
+                                </span>
+                              )}
                             </div>
                           </div>
                         )

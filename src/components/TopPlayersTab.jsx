@@ -3,27 +3,32 @@ import { useState, useEffect } from 'react'
 function TopPlayersTab({ tabData }) {
   const [activeHighlights, setActiveHighlights] = useState({})
   const [videoTitles, setVideoTitles] = useState({})
+  const [videoAuthors, setVideoAuthors] = useState({})
 
   useEffect(() => {
-    const fetchVideoTitles = async () => {
+    const fetchVideoData = async () => {
       if (!tabData?.players) return
 
-      const titlePromises = []
+      const fetchPromises = []
       const titleMap = {}
+      const authorMap = {}
 
       tabData.players.forEach(player => {
         if (player.highlights) {
           player.highlights.forEach(highlight => {
             if (!titleMap[highlight.id]) {
               titleMap[highlight.id] = null
-              titlePromises.push(
+              authorMap[highlight.id] = null
+              fetchPromises.push(
                 fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${highlight.id}&format=json`)
                   .then(res => res.json())
                   .then(data => {
                     titleMap[highlight.id] = data.title
+                    authorMap[highlight.id] = data.author_name
                   })
                   .catch(() => {
                     titleMap[highlight.id] = highlight.title || 'Video'
+                    authorMap[highlight.id] = highlight.author || ''
                   })
               )
             }
@@ -31,11 +36,12 @@ function TopPlayersTab({ tabData }) {
         }
       })
 
-      await Promise.all(titlePromises)
+      await Promise.all(fetchPromises)
       setVideoTitles(titleMap)
+      setVideoAuthors(authorMap)
     }
 
-    fetchVideoTitles()
+    fetchVideoData()
   }, [tabData])
 
   return (
@@ -82,6 +88,11 @@ function TopPlayersTab({ tabData }) {
                   <div className="video-title-featured">
                     {videoTitles[player.highlights[activeHighlights[index] || 0].id] || player.highlights[activeHighlights[index] || 0].title || 'Loading...'}
                   </div>
+                  {videoAuthors[player.highlights[activeHighlights[index] || 0].id] && (
+                    <div className="video-author-featured">
+                      <i className="fas fa-user"></i> {videoAuthors[player.highlights[activeHighlights[index] || 0].id]}
+                    </div>
+                  )}
                   {player.highlights.length > 1 && (
                     <div className="video-list">
                       {player.highlights.map((highlight, idx) => (
@@ -109,6 +120,11 @@ function TopPlayersTab({ tabData }) {
                             </div>
                             <div className="video-list-title" onClick={(e) => { e.stopPropagation(); window.open(`https://www.youtube.com/watch?v=${highlight.id}`, '_blank', 'noopener,noreferrer'); }}>
                               {videoTitles[highlight.id] || highlight.title || 'Loading...'}
+                              {videoAuthors[highlight.id] && (
+                                <span className="video-list-author">
+                                  <i className="fas fa-user"></i> {videoAuthors[highlight.id]}
+                                </span>
+                              )}
                             </div>
                           </div>
                         )
