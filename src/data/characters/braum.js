@@ -2,20 +2,20 @@ export const braum = {
   name: 'Braum',
   tabs: [
     {
-      title: 'Key Moves',
-      description: [
-        'Braum is a defensive tank who protects his team with his shield and crowd control.',
-        'He excels at peeling for allies and setting up engagements.',
-        'Best for players who enjoy supportive play and controlling enemy aggression.'
-      ],
-      moves: [
-        { numericNotation: '5P', notation: 'Passive', notationImage: '/key-moves-notation/braum/braum-passive.png', description: 'Concussive Blows - Attacks apply stacks, stunning at 4 stacks', video: '/videos/braum-passive.mp4' },
-        { numericNotation: '236P', notation: 'Q', notationImage: '/key-moves-notation/braum/braum-q.png', description: "Winter's Bite - Projectile that slows and applies passive", video: '/videos/braum-q.mp4' },
-        { numericNotation: '214P', notation: 'W', notationImage: '/key-moves-notation/braum/braum-w.png', description: 'Stand Behind Me - Dash to ally, granting armor', video: '/videos/braum-w.mp4' },
-        { numericNotation: '623P', notation: 'E', notationImage: '/key-moves-notation/braum/braum-e.png', description: 'Unbreakable - Shield that blocks projectiles', video: '/videos/braum-e.mp4' },
-        { numericNotation: '632146P', notation: 'R', notationImage: '/key-moves-notation/braum/braum-r.png', description: 'Glacial Fissure - Line knockup that creates a slow field', video: '/videos/braum-r.mp4' }
-      ]
-    },
+        id: 'key_moves',
+        title: 'Key Moves',
+        description: [
+         
+        ],
+        moves: [
+          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko1.png', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral', video: 'videos/ekko/illaekko.mp4' },
+          { numericNotation: '5M', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko2.png', description: 'One of the best 5Ms in the game. Reaches far and fast', video: 'videos/ekko/illaekko.mp4' },
+          { numericNotation: 'S1 and 2S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko3.png', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.', video: 'videos/ekko/illaekko.mp4' },
+          { numericNotation: 'j.66', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko4.png', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles', video: 'videos/ekko/illaekko.mp4' },
+          { numericNotation: 'j.2H', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko5.png', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo', video: 'videos/ekko/illaekko.mp4' },
+        { numericNotation: '6S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko6.png', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile', video: 'videos/ekko/illaekko.mp4' }
+        ]
+      },
     {
       id: 'optimal_punish_starts',
       title: 'Optimal Punish Starts',

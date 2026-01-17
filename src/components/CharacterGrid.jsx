@@ -6,10 +6,10 @@ function CharacterGrid({ characters, onCharacterClick, selectedCharacter }) {
     <div className="characters-grid">
       {characters.map(character => (
         <CharacterCard
-          key={character.id}
+          key={character.name}
           character={character}
           onClick={onCharacterClick}
-          isSelected={selectedCharacter?.id === character.id}
+          isSelected={selectedCharacter?.name === character.name}
         />
       ))}
     </div>
