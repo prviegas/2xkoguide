@@ -28,9 +28,20 @@ const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
 //Displays the character guide and tabs, getting the name from Data(folder)/charactersData.js
   return (
     <div ref={ref} className="character-guide">
-      <div className="guide-header">
-        <h2>{character.name.toUpperCase()}</h2>
-        <button className="close-button" onClick={onClose}>✕</button>
+      <div className="hero-banner">
+        <div className="hero-image-container">
+          <img 
+            src={`./champion-pics/${character.name.toLowerCase()}2.png`} 
+            alt={character.name}
+            className="hero-character-image"
+            style={{ objectPosition: `center ${character.heroImageOffset || 0}px` }}
+          />
+          <div className="hero-overlay"></div>
+        </div>
+        <div className="hero-content">
+          <h2>{character.name.toUpperCase()}</h2>
+          <button className="close-button" onClick={onClose}>✕</button>
+        </div>
       </div>
 
       <div className="tabs">

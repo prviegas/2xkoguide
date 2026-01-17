@@ -1,5 +1,6 @@
 export const vi = {
   name: 'Vi',
+  heroImageOffset: -145, // Vertical offset in px for hero banner image (negative = up, positive = down)
   tabs: [
     {
       id: 'key_moves',

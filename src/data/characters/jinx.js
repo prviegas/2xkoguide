@@ -1,5 +1,6 @@
 export const jinx = {
   name: 'Jinx',
+  heroImageOffset: -164, // Vertical offset in px for hero banner image (negative = up, positive = down)
   tabs: [
     {
       id: 'key_moves',
