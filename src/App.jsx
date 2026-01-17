@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
 import SearchBar from './components/SearchBar'
 import CharacterGrid from './components/CharacterGrid'
@@ -10,6 +10,7 @@ import ImpoprtantMessageBar from './components/ImpoprtantMessageBar'
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCharacter, setSelectedCharacter] = useState(null)
+  const guideRef = useRef(null)
 
   const filteredCharacters = charactersData.filter(char =>
     char.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -18,6 +19,10 @@ function App() {
   const handleCharacterClick = (character) => {
     setSelectedCharacter(character)
     setSearchTerm('')
+    // Scroll to the character guide after a short delay to ensure it renders
+    setTimeout(() => {
+      guideRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 50)
   }
 
   const handleSearch = (e) => {
@@ -46,6 +51,7 @@ function App() {
       />
 
       <CharacterGuide 
+        ref={guideRef}
         character={selectedCharacter} 
         onClose={handleCloseGuide} 
       />

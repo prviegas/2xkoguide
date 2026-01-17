@@ -1,5 +1,5 @@
 //Impoprt necessary modules and components
-import { useState, useEffect } from 'react'
+import { useState, useEffect, forwardRef } from 'react'
 import './CharacterGuide.css'
 import KeyMovesTab from './KeyMovesTab'
 import SoloCombosTab from './SoloCombosTab'
@@ -14,7 +14,7 @@ import TeamSynergiesTab from './TeamSynergiesTab'
       NOTE: the character object gets its info from Data(folder)/charactersData.js
     - onClose: Function to close the guide
   */
-function CharacterGuide({ character, onClose }) {
+const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
   const [activeTab, setActiveTab] = useState(0)
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function CharacterGuide({ character, onClose }) {
   const currentTab = character.tabs[activeTab] || character.tabs[0]
 //Displays the character guide and tabs, getting the name from Data(folder)/charactersData.js
   return (
-    <div className="character-guide">
+    <div ref={ref} className="character-guide">
       <div className="guide-header">
         <h2>{character.name.toUpperCase()}</h2>
         <button className="close-button" onClick={onClose}>✕</button>
@@ -63,6 +63,6 @@ function CharacterGuide({ character, onClose }) {
       </div>
     </div>
   )
-}
+})
 //exports the CharacterGuide on completion
 export default CharacterGuide
