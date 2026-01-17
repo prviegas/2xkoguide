@@ -1,0 +1,17 @@
+  /* start of file
+  File: src/components/convertText.css
+  Purpose: Styles for convertText component
+  */
+  .notation {
+  padding: 16px;
+}
+
+.image-row {
+  display: flex;
+  gap: 12px;
+}
+
+.mapped-image {
+  width: 64px;
+  height: auto;
+}
