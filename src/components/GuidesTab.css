@@ -4,9 +4,11 @@
 }
 
 .guides-description {
-  color: #ddd;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  color: #bbb;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  font-size: 0.95em;
+  letter-spacing: 0.01em;
 }
 
 /* Video Guides Section */
@@ -17,13 +19,16 @@
 .video-guides-section h4,
 .text-guides-section h4 {
   color: #bbdf5d;
-  font-size: 1.2em;
+  font-size: 0.85em;
+  font-weight: 700;
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #3a3c3e;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .video-guides-section h4 i {
@@ -96,13 +101,14 @@
 
 .video-guide-title {
   color: #bbdf5d;
-  font-size: 0.95em;
-  font-weight: 500;
+  font-size: 0.9em;
+  font-weight: 600;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  letter-spacing: 0.02em;
 }
 
 .video-guide-author {

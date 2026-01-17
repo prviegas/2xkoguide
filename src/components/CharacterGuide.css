@@ -153,9 +153,9 @@
   border-radius: 0;
   border: none;
   border-bottom: 3px solid transparent;
-  padding: 0.8em 1.5em;
-  font-size: 0.95em;
-  font-weight: 500;
+  padding: 0.75em 1.4em;
+  font-size: 0.8em;
+  font-weight: 600;
   font-family: inherit;
   background-color: transparent;
   color: #888;
@@ -163,6 +163,8 @@
   transition: all 0.25s;
   position: relative;
   bottom: -2px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .tab:hover {
@@ -182,16 +184,20 @@
 
 .tab-content h3 {
   color: #bbdf5d;
-  margin-bottom: 1rem;
-  font-size: 1.3em;
+  margin-bottom: 1.25rem;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 .tab-content p {
-  line-height: 1.8;
-  color: #ddd;
+  line-height: 1.7;
+  color: #bbb;
   text-align: left;
   margin-bottom: 1rem;
-  font-size: 1.05em;
+  font-size: 0.95em;
+  letter-spacing: 0.01em;
 }
 
 .moves-table {
@@ -205,12 +211,14 @@
 }
 
 .moves-table th {
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 1rem;
   text-align: center;
   color: #bbdf5d;
   font-weight: 600;
   border: 1px solid #3a3c3e;
-  font-size: 1em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .moves-table td {
@@ -346,7 +354,10 @@
 .video-modal-header h3 {
   color: #bbdf5d;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .video-modal-header h3 span {
@@ -393,8 +404,9 @@
 .player-card h4 {
   color: #bbdf5d;
   margin: 0 0 0.8rem 0;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 1.15em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .player-card p {

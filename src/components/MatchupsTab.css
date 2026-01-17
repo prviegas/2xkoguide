@@ -9,8 +9,10 @@
 
 .matchups-description p {
   color: #888;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
 }
 
 /* Champion Selection Row */
@@ -63,9 +65,11 @@
 .champion-name {
   margin-top: 8px;
   color: #888;
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 0.75rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* Matchup Details Section */
@@ -108,16 +112,20 @@
 .matchup-title h2 {
   color: #bbdf5d;
   margin: 0 0 10px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .difficulty {
   display: inline-block;
   padding: 5px 15px;
   border-radius: 0;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.7rem;
   text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .difficulty.easy {
@@ -169,7 +177,10 @@
   color: #bbdf5d;
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   border-bottom: 2px solid rgba(187, 223, 93, 0.3);
   padding-bottom: 10px;
 }
