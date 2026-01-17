@@ -19,7 +19,7 @@ export const ekko = {// Ekko Data Starts Here
       },
       {
         id: 'important_solo_combos',
-        title: 'Important Solo Combos',
+        title: 'Combos',
         description: [
 
         ],
@@ -30,14 +30,16 @@ export const ekko = {// Ekko Data Starts Here
           { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-4.png', video: 'videos/ekko/ekko-combo-4.mp4' },
         ],
         comboEnders: [
-          { purpose: 'Max Damage', numericNotation: 'j.H j.S2 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
-          { purpose: 'Corner Carry', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
-          { purpose: 'Safe Tag', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
+          { purpose: 'Oki', numericNotation: 'j.H j.S2 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
+          { purpose: 'Limit Strike', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
+          { purpose: 'Max Dmg', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
+          { purpose: 'Assist Setup', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
+          { purpose: 'Tag launcher', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
         ]
       },
       {
         id: 'team_synergies',
-        title: 'Team Synergies/Suggestions',
+        title: 'Teams',
         description: '',
         teams: [
           {
@@ -189,7 +191,7 @@ export const ekko = {// Ekko Data Starts Here
       },
       {
         id: 'top_players',
-        title: 'Top Players to Watch',
+        title: 'Top Players',
         description: 'Learn from the best Ekko players in the competitive scene.',
         players: [
           {

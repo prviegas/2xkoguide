@@ -20,12 +20,12 @@ export const jinx = {
     },
     {
       id: 'important_solo_combos',
-      title: 'Important Solo Combos',
+      title: 'Combos',
       content: 'Poke: Fishbones → W for long-range harass. Trap Setup: E forward → Fishbones AoE. Execution: W → R on low target. All-in: E between → Pow-Pow autos → W. Cleanup: Get Excited → Fishbones for safe damage.'
     },
     {
       id: 'team_synergies',
-      title: 'Team Synergies/Suggestions',
+      title: 'Teams',
       content: 'Maintain maximum range with Fishbones. Switch to Pow-Pow for DPS on tanks. Use traps to control space and peel. Ultimate for long-range executes. Play aggressively when excited.'
     },
     {

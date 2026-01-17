@@ -20,12 +20,12 @@ export const yasuo = {
     },
     {
       id: 'important_solo_combos',
-      title: 'Important Solo Combos',
+      title: 'Combos',
       content: 'Basic: E → Q → E. Airblade: E → Q (tornado) → R → Q. Keyblade: E → Q → Flash → R. Beyblade: E in circles → Q spam → Tornado. Poke: E (in) → Q → E (out).'
     },
     {
       id: 'team_synergies',
-      title: 'Team Synergies/Suggestions',
+      title: 'Teams',
       content: 'Stack Q while farming. Use E for mobility and positioning. Wind Wall key abilities. Ultimate on any airborne target. Build flow for shield before trades.'
     },
     {

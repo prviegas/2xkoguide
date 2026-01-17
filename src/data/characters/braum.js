@@ -19,12 +19,12 @@ export const braum = {
       },
     {
       id: 'important_solo_combos',
-      title: 'Important Solo Combos',
+      title: 'Combos',
       content: 'Engage: Q → Auto → W (to ally) → E (block retaliation). Peel: E (block) → Q → Auto until stun. Ultimate Setup: R → Q → Auto for extended CC. Team Support: W to endangered ally → E to block. Counter: Time E to block key abilities.'
     },
     {
       id: 'team_synergies',
-      title: 'Team Synergies/Suggestions',
+      title: 'Teams',
       content: 'Position between enemies and your team. Use shield to block critical abilities. Stack passive on priority targets for team follow-up. Save dash for emergency peels or engages. Communicate ultimate usage for team coordination.'
     },
     {

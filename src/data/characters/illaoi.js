@@ -20,12 +20,12 @@ export const illaoi = {
     },
     {
       id: 'important_solo_combos',
-      title: 'Important Solo Combos',
+      title: 'Combos',
       content: 'Harass: E → Q → W on spirit. All-in: R → W → Q → E → W. Multiple Enemies: R when grouped → W spam. Spirit Kill: E → Auto → Q → W → Q. Tentacle Rotation: W → Auto → Q → W.'
     },
     {
       id: 'team_synergies',
-      title: 'Team Synergies/Suggestions',
+      title: 'Teams',
       content: 'Control areas with tentacle spawns. Land spirit pulls to win trades. Ultimate when outnumbered for maximum value. Use W to trigger all nearby tentacles. Fight in areas with multiple tentacles.'
     },
     {

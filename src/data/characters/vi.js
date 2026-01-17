@@ -20,12 +20,12 @@ export const vi = {
     },
     {
       id: 'important_solo_combos',
-      title: 'Important Solo Combos',
+      title: 'Combos',
       content: 'Engage: R → Auto → E → Q (charged). Burst: Q (full charge) → Auto → E → Auto → E. Peel: Q to interrupt → E → Auto. Chase: R → Auto until Q ready → Q. Quick Trade: Q (partial) → Auto → E → disengage.'
     },
     {
       id: 'team_synergies',
-      title: 'Team Synergies/Suggestions',
+      title: 'Teams',
       content: 'Target high-value enemies with ultimate. Proc W passive consistently. Use Q as follow-up or escape. Save E for damage or waveclear. Coordinate dives with team.'
     },
     {

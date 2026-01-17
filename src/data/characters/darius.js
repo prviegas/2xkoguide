@@ -20,12 +20,12 @@ export const darius =  {
       },
       {
         id: 'important_solo_combos',
-        title: 'Important Solo Combos',
+        title: 'Combos',
         content: 'All-in: E → W → Auto → Q (blade) → R. Stack Building: Auto → W → Auto → Q → Auto. Reset Chain: R → R → R on multiple low enemies. Zone Control: Q spam to keep enemies at bay. Trade: E → W → Auto → disengage.'
       },
       {
         id: 'team_synergies',
-        title: 'Team Synergies/Suggestions',
+        title: 'Teams',
         content: 'Build passive stacks before committing ultimate. Position Q for blade hits. Use pull to catch fleeing enemies or interrupt dashes. Save ultimate for executes or high-value targets. Play aggressively once stacked.'
       },
       {
