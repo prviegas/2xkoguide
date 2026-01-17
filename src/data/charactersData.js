@@ -207,7 +207,121 @@ export const charactersData = [
       {
         id: 'matchups',
         title: 'Matchups',
-        content: 'Strong Against: Squishy burst mages, immobile targets. Weak Against: Tanks, sustained damage. Tips: Ultimate is both offensive and defensive. Bait abilities before committing. Use mobility to dodge skillshots. Time W for maximum impact.'
+        description: 'Select a champion below to view matchup details and strategies',
+        matchups: {
+          'Ahri': {
+            difficulty: 'Medium',
+            difficultyClass: 'medium',
+            tips: [
+              'Watch for her Charm (E) - it\'s her main setup tool',
+              'Use Parallel Convergence (W) to zone her during Spirit Rush',
+              'Your ultimate can dodge her charm if timed correctly',
+              'Punish her cooldowns after she uses Q for waveclear'
+            ],
+            keyPoints: [
+              'Mobility vs Mobility matchup',
+              'Whoever lands CC first usually wins the trade',
+              'Play around her charm cooldown',
+              'Respect her burst damage when her passive is stacked'
+            ]
+          },
+          'Braum': {
+            difficulty: 'Hard',
+            difficultyClass: 'hard',
+            tips: [
+              'His shield blocks your Q projectiles',
+              'Avoid fighting when his passive stacks are on you',
+              'Bait out his shield before committing with full combo',
+              'Your mobility can help you reposition around his shield'
+            ],
+            keyPoints: [
+              'Tank matchup - hard to burst down',
+              'Shield negates a lot of your poke',
+              'Focus on avoiding his passive stacks',
+              'Look for picks when he\'s separated from his team'
+            ]
+          },
+          'Darius': {
+            difficulty: 'Medium',
+            difficultyClass: 'medium',
+            tips: [
+              'Keep distance to avoid his pull (E) and outer ring Q',
+              'Use Phase Dive (E) to kite him effectively',
+              'Don\'t let him stack his passive on you',
+              'Your ultimate is perfect for undoing bad trades'
+            ],
+            keyPoints: [
+              'Range advantage is key',
+              'Never fight in melee range when his passive is stacked',
+              'Poke him down from distance',
+              'Use your mobility to avoid his skillshots'
+            ]
+          },
+          'Illaoi': {
+            difficulty: 'Medium',
+            difficultyClass: 'medium',
+            tips: [
+              'Dodge her Test of Spirit (E) at all costs',
+              'Use your mobility to avoid her tentacle slams',
+              'Don\'t fight when she ults - just disengage',
+              'Your W can zone her and make her respect your space'
+            ],
+            keyPoints: [
+              'Mobility vs Immobile matchup favors you',
+              'Missing her E makes her much less threatening',
+              'Never stand near her tentacles',
+              'Hit and run tactics work well'
+            ]
+          },
+          'Jinx': {
+            difficulty: 'Easy',
+            difficultyClass: 'easy',
+            tips: [
+              'Easy to dive with your E and R combo',
+              'Watch for her flame chompers (E) when diving',
+              'She has no mobility - abuse this',
+              'Your burst can kill her before she kites'
+            ],
+            keyPoints: [
+              'Favorable matchup for Ekko',
+              'She lacks escape tools',
+              'Your assassination pattern works perfectly',
+              'Just respect her damage output and traps'
+            ]
+          },
+          'Vi': {
+            difficulty: 'Hard',
+            difficultyClass: 'hard',
+            tips: [
+              'Her ultimate is targeted and unavoidable',
+              'Save your R for after she engages on you',
+              'Your W can stop her Q dash if placed well',
+              'Don\'t try to trade when her passive shield is up'
+            ],
+            keyPoints: [
+              'She can lock you down hard',
+              'Difficult to escape once she commits',
+              'Play around her ultimate cooldown',
+              'Positioning is crucial'
+            ]
+          },
+          'Yasuo': {
+            difficulty: 'Medium',
+            difficultyClass: 'medium',
+            tips: [
+              'His Wind Wall can block your Q',
+              'Bait out his wall before using important abilities',
+              'Your W stun can interrupt his dash patterns',
+              'Use Q after his wall expires'
+            ],
+            keyPoints: [
+              'Skill matchup - both have outplay potential',
+              'Wind Wall timing is crucial',
+              'Whoever controls the tempo wins',
+              'Your ultimate can negate his all-in attempts'
+            ]
+          }
+        }
       },
       {
         id: 'top_players',

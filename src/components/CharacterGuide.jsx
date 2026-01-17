@@ -54,7 +54,7 @@ const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
         ) : currentTab.id === 'top_players' ? (
           <TopPlayersTab tabData={currentTab} />
         ) : currentTab.id === 'matchups' ? (
-          <MatchupsTab tabData={currentTab} />
+          <MatchupsTab tabData={currentTab} currentCharacter={character.name} />
         ) : currentTab.id === 'team_synergies' ? (
           <TeamSynergiesTab tabData={currentTab} />
         ) : (
