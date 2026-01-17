@@ -212,113 +212,115 @@ export const charactersData = [
           'Ahri': {
             difficulty: 'Medium',
             difficultyClass: 'medium',
-            tips: [
-              'Watch for her Charm (E) - it\'s her main setup tool',
-              'Use Parallel Convergence (W) to zone her during Spirit Rush',
-              'Your ultimate can dodge her charm if timed correctly',
-              'Punish her cooldowns after she uses Q for waveclear'
+            overview: [
+              'This matchup is all about mobility versus mobility. Both Ekko and Ahri have strong movement options and burst damage, making it a skill-based matchup where positioning and timing are crucial.',
+              'The key to winning this matchup is respecting Ahri\'s Charm (E) while looking for opportunities to punish her cooldowns. Use your Parallel Convergence (W) to zone her during Spirit Rush, and remember that your ultimate can dodge her charm if timed correctly. Play around her charm cooldown and you\'ll find openings to land your burst combo.'
             ],
             keyPoints: [
-              'Mobility vs Mobility matchup',
+              'Mobility vs Mobility matchup - whoever controls tempo wins',
               'Whoever lands CC first usually wins the trade',
-              'Play around her charm cooldown',
+              'Play around her charm cooldown window',
               'Respect her burst damage when her passive is stacked'
+            ],
+            videos: [
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
             ]
           },
           'Braum': {
             difficulty: 'Hard',
             difficultyClass: 'hard',
-            tips: [
-              'His shield blocks your Q projectiles',
-              'Avoid fighting when his passive stacks are on you',
-              'Bait out his shield before committing with full combo',
-              'Your mobility can help you reposition around his shield'
+            overview: [
+              'Braum is a challenging matchup for Ekko due to his defensive capabilities and crowd control. His shield can block your Timewinder projectiles, and his passive stacks can lead to devastating stuns.',
+              'The key to this matchup is patience and positioning. Bait out his shield before committing with your full combo, and use your mobility to reposition around his shield angle. Avoid extended trades when his passive stacks are on you, and look for opportunities to catch him when he\'s separated from his team.'
             ],
             keyPoints: [
-              'Tank matchup - hard to burst down',
-              'Shield negates a lot of your poke',
-              'Focus on avoiding his passive stacks',
-              'Look for picks when he\'s separated from his team'
-            ]
+              'Tank matchup - very hard to burst down',
+              'His shield negates most of your poke damage',
+              'Avoid fighting with passive stacks on you',
+              'Best to catch him isolated from his team'
+            ],
+            videos: []
           },
           'Darius': {
             difficulty: 'Medium',
             difficultyClass: 'medium',
-            tips: [
-              'Keep distance to avoid his pull (E) and outer ring Q',
-              'Use Phase Dive (E) to kite him effectively',
-              'Don\'t let him stack his passive on you',
-              'Your ultimate is perfect for undoing bad trades'
+            overview: [
+              'Ekko has the advantage in this matchup thanks to his superior range and mobility. The key is maintaining distance to avoid Darius\' pull (E) and the outer ring of his Q, which deal the most damage.',
+              'Use Phase Dive (E) to kite him effectively and never let him stack his passive bleed on you. If you make a mistake and take a bad trade, your ultimate is perfect for resetting the situation. Poke him down from distance and use your mobility to avoid his skillshots while chipping away at his health.'
             ],
             keyPoints: [
-              'Range advantage is key',
-              'Never fight in melee range when his passive is stacked',
-              'Poke him down from distance',
-              'Use your mobility to avoid his skillshots'
-            ]
+              'Range and mobility advantage is key to winning',
+              'Never fight in melee range with his passive stacked',
+              'Poke him down safely from distance',
+              'Your ultimate can undo bad trades'
+            ],
+            videos: []
           },
           'Illaoi': {
             difficulty: 'Medium',
             difficultyClass: 'medium',
-            tips: [
-              'Dodge her Test of Spirit (E) at all costs',
-              'Use your mobility to avoid her tentacle slams',
-              'Don\'t fight when she ults - just disengage',
-              'Your W can zone her and make her respect your space'
+            overview: [
+              'This is a favorable matchup for Ekko as your mobility counters Illaoi\'s immobile, area-control playstyle. The most important thing is dodging her Test of Spirit (E) - if she misses this ability, she becomes much less threatening.',
+              'Use your superior mobility to avoid her tentacle slams and never fight when she uses her ultimate. Your W can zone her and force her to respect your space. Employ hit-and-run tactics, darting in for damage and getting out before she can retaliate. Never stand near her tentacles as they provide most of her damage and healing.'
             ],
             keyPoints: [
-              'Mobility vs Immobile matchup favors you',
-              'Missing her E makes her much less threatening',
-              'Never stand near her tentacles',
-              'Hit and run tactics work well'
+              'Mobility vs Immobile matchup heavily favors Ekko',
+              'Dodging her E makes her much less threatening',
+              'Never stand near multiple tentacles',
+              'Hit and run tactics are extremely effective'
+            ],
+            videos: [
+              { id: 'illaekko' }
             ]
           },
           'Jinx': {
             difficulty: 'Easy',
             difficultyClass: 'easy',
-            tips: [
-              'Easy to dive with your E and R combo',
-              'Watch for her flame chompers (E) when diving',
-              'She has no mobility - abuse this',
-              'Your burst can kill her before she kites'
+            overview: [
+              'This is one of Ekko\'s easiest matchups. Jinx lacks mobility and escape tools, making her an ideal target for your assassination combo. Your E and R combo can easily close the gap and eliminate her.',
+              'The only thing to watch out for is her flame chompers (E) when you\'re diving - try to bait them out first or dash around them. She has high damage output if left unchecked, but your burst damage can eliminate her before she has time to kite. This matchup heavily favors aggressive play from Ekko.'
             ],
             keyPoints: [
-              'Favorable matchup for Ekko',
-              'She lacks escape tools',
-              'Your assassination pattern works perfectly',
-              'Just respect her damage output and traps'
-            ]
+              'Very favorable matchup for Ekko',
+              'She completely lacks escape tools',
+              'Your assassination combo works perfectly on her',
+              'Watch for her traps when diving'
+            ],
+            videos: []
           },
           'Vi': {
             difficulty: 'Hard',
             difficultyClass: 'hard',
-            tips: [
-              'Her ultimate is targeted and unavoidable',
-              'Save your R for after she engages on you',
-              'Your W can stop her Q dash if placed well',
-              'Don\'t try to trade when her passive shield is up'
+            overview: [
+              'Vi is a difficult matchup for Ekko because of her targeted ultimate that can lock you down. Once she commits to you, it\'s very difficult to escape her engage pattern and follow-up damage.',
+              'The best strategy is to save your ultimate for after she engages on you, allowing you to return to your previous position and undo the damage. Your W can interrupt her Q dash if placed well and predicted correctly. Don\'t try to trade when her passive shield is up, and play around her ultimate cooldown. Positioning is crucial in this matchup.'
             ],
             keyPoints: [
-              'She can lock you down hard',
-              'Difficult to escape once she commits',
-              'Play around her ultimate cooldown',
-              'Positioning is crucial'
-            ]
+              'She can lock you down with targeted CC',
+              'Very difficult to escape once she commits',
+              'Save your R for after her engage',
+              'Play around her ultimate cooldown'
+            ],
+            videos: []
           },
           'Yasuo': {
             difficulty: 'Medium',
             difficultyClass: 'medium',
-            tips: [
-              'His Wind Wall can block your Q',
-              'Bait out his wall before using important abilities',
-              'Your W stun can interrupt his dash patterns',
-              'Use Q after his wall expires'
+            overview: [
+              'This is a skill-based matchup where both champions have significant outplay potential. Yasuo\'s Wind Wall can block your Timewinder (Q), so timing and ability management are crucial.',
+              'Try to bait out his Wind Wall before committing your important abilities, and save your Q for after his wall expires. Your W stun can interrupt his dash patterns if you predict his movement correctly. Whoever controls the tempo of the fight typically wins. Your ultimate can negate his all-in attempts, giving you a defensive option when he commits.'
             ],
             keyPoints: [
-              'Skill matchup - both have outplay potential',
-              'Wind Wall timing is crucial',
-              'Whoever controls the tempo wins',
-              'Your ultimate can negate his all-in attempts'
+              'Even skill matchup - both have outplay potential',
+              'Wind Wall timing is absolutely crucial',
+              'Whoever controls tempo wins the trades',
+              'Your ultimate negates his all-in attempts'
+            ],
+            videos: [
+              { id: '8qmI6OieGnI' }
             ]
           }
         }
