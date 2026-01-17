@@ -31,6 +31,7 @@ const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
       <div className="hero-banner">
         <div className="hero-image-container">
           <img 
+            key={character.name}
             src={`./champion-pics/${character.name.toLowerCase()}2.png`} 
             alt={character.name}
             className="hero-character-image"
