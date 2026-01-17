@@ -25,6 +25,7 @@ function SoloCombosTab({ character, tabData }) {
 
   const description = Array.isArray(tabData.description) ? tabData.description : []
   const combos = Array.isArray(tabData.combos) ? tabData.combos : []
+  const comboEnders = Array.isArray(tabData.comboEnders) ? tabData.comboEnders : []
 
   return (
     <>
@@ -82,6 +83,49 @@ function SoloCombosTab({ character, tabData }) {
           ))}
         </tbody>
       </table>
+      )}
+
+      {comboEnders.length > 0 && (
+        <>
+          <h3 style={{ marginTop: '30px', marginBottom: '15px' }}>Combo Enders</h3>
+          <table className="moves-table solo-combos-table">
+            <thead>
+              <tr>
+                <th>Purpose</th>
+                <th>
+                  Numeric Notation{' '}
+                  <i 
+                    className="fas fa-question-circle notation-header-icon" 
+                    onClick={() => setIsCheatsheetOpen(true)}
+                    title="Learn numpad notation"
+                  ></i>
+                </th>
+                <th>2XKO Notation</th>
+                <th>Video</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comboEnders.map((combo, index) => (
+              <tr key={index}>
+                <td className="description-cell">{combo.purpose || 'General ender'}</td>              
+                <td className="numeric-notation-cell">{combo.numericNotation}</td>
+                <td className="notation-cell">
+                  <img src={`.${combo.notationImage}`} alt={combo.notation} className="notation-image" />
+                </td>
+                <td className="video-cell">
+                  <button 
+                    className="video-icon-btn"
+                    onClick={() => openVideoModal(combo.video, combo.notation, combo.numericNotation)}
+                    title="View combo demonstration"
+                  >
+                    <i className="fas fa-play-circle"></i>
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        </>
       )}
 
       {videoModal.isOpen && (

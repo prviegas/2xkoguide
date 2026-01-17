@@ -28,6 +28,11 @@ export const ekko = {// Ekko Data Starts Here
           { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
           { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
           { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-4.png', video: 'videos/ekko/ekko-combo-4.mp4' },
+        ],
+        comboEnders: [
+          { purpose: 'Max Damage', numericNotation: 'j.H j.S2 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
+          { purpose: 'Corner Carry', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
+          { purpose: 'Safe Tag', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
         ]
       },
       {
