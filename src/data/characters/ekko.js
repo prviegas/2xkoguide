@@ -192,7 +192,6 @@ export const ekko = {// Ekko Data Starts Here
       {
         id: 'top_players',
         title: 'Top Players',
-        description: 'Learn from the best Ekko players in the competitive scene.',
         players: [
           {
             name: 'SonicFox',
@@ -229,6 +228,70 @@ export const ekko = {// Ekko Data Starts Here
               youtube: 'https://youtube.com/@player3',
               twitch: 'https://twitch.tv/player3',
             }
+          }
+        ]
+      },
+      {
+        id: 'guides',
+        title: 'Guides',
+        videos: [
+          { 
+            id: 'F3x1-NNy6h4', 
+          },
+          { 
+            id: '8qmI6OieGnI', 
+          },
+          { 
+            id: 'gCDtZgLubqw', 
+          },
+          { 
+            id: 'K6YIcxSAKz8', 
+          }
+        ],
+        textGuides: [
+          {
+            title: 'Ekko Fundamentals Guide',
+            author: 'Community',
+            sections: [
+              {
+                heading: 'Overview',
+                content: 'Ekko is a high-mobility rushdown character who excels at controlling space with his Timewinder and punishing opponents with explosive combos. His unique Rewind mechanic allows him to reset to a previous position, making him incredibly slippery and hard to pin down.'
+              },
+              {
+                heading: 'Gameplan',
+                content: 'Your primary goal is to use your superior air mobility (j.66) and Timewinder to control neutral and find openings. Once you land a hit, convert into high-damage combos using Rewind extensions. In pressure situations, mix up your offense with overheads (j.2H) and use Rewind to stay safe.'
+              },
+              {
+                heading: 'Strengths & Weaknesses',
+                content: 'Strengths: Excellent mobility, strong mixup game, high combo damage, great at covering space. Weaknesses: Requires good execution, Rewind management is crucial, can struggle against strong anti-air characters.'
+              }
+            ],
+            tips: [
+              'Always keep track of your Rewind position - it\'s your safety net',
+              'Use j.66 to bait anti-airs and cross up opponents',
+              'Hitting your Timewinder with heavy attacks sends it forward - use this to extend pressure',
+              '6S1 into tag is a great way to get Ekko in safely',
+              'Your 5M is one of the best in the game - abuse its range in neutral'
+            ]
+          },
+          {
+            title: 'Ekko Combo Theory',
+            author: 'FGC Labs',
+            sections: [
+              {
+                heading: 'Combo Structure',
+                content: 'Ekko\'s combos typically follow this structure: Starter > Rewind Extension > Launcher > Air Series > Ender. The key is learning when to use your Rewind to extend combos and when to save it for safety.'
+              },
+              {
+                heading: 'Damage Optimization',
+                content: 'For maximum damage, always look to land your Timewinder during combos and use it to extend. Corner combos allow for significantly more damage due to easier juggles and the ability to loop certain sequences.'
+              }
+            ],
+            tips: [
+              'BnB combo: M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] j.d.S1 S2 H 2T',
+              'For corner carry, use j.S2 enders to push opponents to the wall',
+              'Tag cancel your air series for maximum damage with your partner'
+            ]
           }
         ]
       },

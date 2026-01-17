@@ -1,0 +1,126 @@
+/* Guides Tab Styles */
+.guides-tab {
+  width: 100%;
+}
+
+.guides-description {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Video Guides Section */
+.video-guides-section {
+  margin-bottom: 2.5rem;
+}
+
+.video-guides-section h4,
+.text-guides-section h4 {
+  color: #bbdf5d;
+  font-size: 1.2em;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3a3c3e;
+}
+
+.video-guides-section h4 i {
+  color: #FF0000;
+}
+
+.text-guides-section h4 i {
+  color: #bbdf5d;
+}
+
+/* Video Grid */
+.video-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.video-guide-card {
+  background: linear-gradient(135deg, #1f2123 0%, #252729 100%);
+  border: 2px solid #3a3c3e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.video-guide-card:hover {
+  border-color: #bbdf5d;
+  box-shadow: 0 4px 12px rgba(187, 223, 93, 0.3);
+  transform: translateY(-4px);
+}
+
+.video-guide-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.video-guide-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-guide-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.video-guide-card:hover .video-guide-play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.video-guide-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.video-guide-title {
+  color: #bbdf5d;
+  font-size: 0.95em;
+  font-weight: 500;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-guide-author {
+  color: #888;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media (max-width: 992px) {
+  .video-guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-guides-grid {
+    grid-template-columns: 1fr;
+  }
+}

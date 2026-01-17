@@ -6,6 +6,7 @@ import SoloCombosTab from './SoloCombosTab'
 import TopPlayersTab from './TopPlayersTab'
 import MatchupsTab from './MatchupsTab'
 import TeamSynergiesTab from './TeamSynergiesTab'
+import GuidesTab from './GuidesTab'
   /* start of file
   File: src/components/CharacterGuide.jsx
   Purpose: Component to display a character guide with multiple tabs
@@ -69,6 +70,8 @@ const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
           <MatchupsTab tabData={currentTab} currentCharacter={character.name} />
         ) : currentTab.id === 'team_synergies' ? (
           <TeamSynergiesTab tabData={currentTab} />
+        ) : currentTab.id === 'guides' ? (
+          <GuidesTab tabData={currentTab} />
         ) : (
           <p>{currentTab.content}</p>
         )}
