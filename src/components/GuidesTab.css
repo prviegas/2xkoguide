@@ -124,3 +124,63 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Small Variant - Featured + List Layout */
+.video-guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Featured (first) video in small variant */
+.video-guide-featured {
+  width: 100%;
+}
+
+.video-guide-featured .video-guide-thumbnail {
+  aspect-ratio: 16 / 9;
+}
+
+.video-guide-featured .video-guide-play-icon {
+  font-size: 4em;
+}
+
+/* List item videos in small variant */
+.video-guide-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.video-guide-list-item .video-guide-thumbnail {
+  width: 180px;
+  min-width: 180px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-guide-list-item .video-guide-play-icon {
+  font-size: 2em;
+}
+
+.video-guide-list-item .video-guide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  flex: 1;
+}
+
+.video-guide-list-item .video-guide-title {
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 600px) {
+  .video-guide-list-item .video-guide-thumbnail {
+    width: 120px;
+    min-width: 120px;
+  }
+  
+  .video-guide-list-item .video-guide-play-icon {
+    font-size: 1.5em;
+  }
+}

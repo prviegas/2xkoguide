@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './MatchupsTab.css';
 import { charactersData } from '../data/charactersData';
+import YTVideo from './YTVideo';
 
 function MatchupsTab({ tabData, currentCharacter }) {
   const [selectedChampion, setSelectedChampion] = useState(null);
-  const [videoTitles, setVideoTitles] = useState({});
 
   // Get all available champions from charactersData
   const champions = charactersData.map(char => ({
@@ -18,40 +18,6 @@ function MatchupsTab({ tabData, currentCharacter }) {
 
   // Get matchup data from tabData
   const matchupData = tabData.matchups || {};
-
-  useEffect(() => {
-    const fetchVideoTitles = async () => {
-      if (!matchupData) return;
-
-      const titlePromises = [];
-      const titleMap = {};
-
-      Object.values(matchupData).forEach(matchup => {
-        if (matchup.videos) {
-          matchup.videos.forEach(video => {
-            if (!titleMap[video.id]) {
-              titleMap[video.id] = null;
-              titlePromises.push(
-                fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${video.id}&format=json`)
-                  .then(res => res.json())
-                  .then(data => {
-                    titleMap[video.id] = data.title;
-                  })
-                  .catch(() => {
-                    titleMap[video.id] = 'Video';
-                  })
-              );
-            }
-          });
-        }
-      });
-
-      await Promise.all(titlePromises);
-      setVideoTitles(titleMap);
-    };
-
-    fetchVideoTitles();
-  }, [matchupData]);
 
   const getMatchupInfo = (championName) => {
     return matchupData[championName] || {
@@ -124,17 +90,14 @@ function MatchupsTab({ tabData, currentCharacter }) {
             {getMatchupInfo(selectedChampion.name).videos && getMatchupInfo(selectedChampion.name).videos.length > 0 && (
               <div className="matchup-section matchup-videos">
                 <h3>Related Videos</h3>
-                <div className="video-list">
+                <div className="video-guides-grid">
                   {getMatchupInfo(selectedChampion.name).videos.map((video, index) => (
-                    <div key={index} className="video-item">
-                      <iframe
-                        src={`https://www.youtube.com/embed/${video.id}`}
-                        title={videoTitles[video.id] || 'Loading...'}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                      <p className="video-title">{videoTitles[video.id] || 'Loading...'}</p>
-                    </div>
+                    <YTVideo
+                      key={index}
+                      id={video.id}
+                      fallbackTitle={video.title}
+                      fallbackAuthor={video.author}
+                    />
                   ))}
                 </div>
               </div>
