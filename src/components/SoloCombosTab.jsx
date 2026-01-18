@@ -70,9 +70,9 @@ function SoloCombosTab({ character, tabData }) {
               <td className="description-cell">{combo.purpose || 'General combo'}</td>              
               <td className="numeric-notation-cell">{combo.numericNotation}</td>
               <td className="notation-cell">
-                //converted image hereish
-                <NotationRenderer character={character}></NotationRenderer>
-                {/*<img src={`.${combo.notationImage}`} alt={combo.notation} className="notation-image" />*/}
+                {/* //converted image hereish */}
+                {/* <NotationRenderer character={character}></NotationRenderer> */}
+                <img src={`.${combo.notationImage}`} alt={combo.notation} className="notation-image" />
               </td>
               <td className="video-cell">
                 <button 
