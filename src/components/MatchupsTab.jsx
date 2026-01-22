@@ -10,7 +10,7 @@ function MatchupsTab({ tabData, currentCharacter }) {
   const champions = charactersData.map(char => ({
     id: char.id,
     name: char.name,
-    image: `./champion-pics/head-zoom/${char.name.toLowerCase()}1.png`
+    image: `./champion-pics/head-zoom/low-res/${char.name.toLowerCase()}1.png`
   }));
 
   // Filter out the current character
