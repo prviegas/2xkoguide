@@ -11,3 +11,10 @@
     max-width: 700px;
   }
 }
+
+@media (max-width: 800px) {
+  .characters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
