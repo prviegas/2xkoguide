@@ -1,6 +1,6 @@
 export const braum = {
   name: 'Braum',
-  heroImageOffset: -82, // Vertical offset in px for hero banner image (negative = up, positive = down)
+  heroImageOffset: { desktop: -82, mobile: -35 }, // Vertical offset in px for hero banner image (negative = up, positive = down)
   tabs: [
     {
         id: 'key_moves',

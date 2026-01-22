@@ -1,6 +1,6 @@
 export const blitzcrank = {
   name: 'Blitzcrank',
-  heroImageOffset: -296,
+  heroImageOffset: { desktop: -296, mobile: -100 },
   tabs: [
     {
       id: 'key_moves',

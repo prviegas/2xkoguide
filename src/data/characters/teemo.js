@@ -1,6 +1,6 @@
 export const teemo = {
   name: 'Teemo',
-  heroImageOffset: -1080,
+  heroImageOffset: { desktop: -1080, mobile: -358 },
   tabs: [
     {
       id: 'key_moves',

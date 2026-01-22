@@ -15,12 +15,31 @@ import GuidesTab from './GuidesTab'
       NOTE: the character object gets its info from Data(folder)/charactersData.js
     - onClose: Function to close the guide
   */
+
+// Helper function to get the appropriate hero image offset based on screen width
+const getHeroImageOffset = (heroImageOffset, isMobile) => {
+  if (typeof heroImageOffset === 'object' && heroImageOffset !== null) {
+    return isMobile ? (heroImageOffset.mobile ?? 0) : (heroImageOffset.desktop ?? 0)
+  }
+  // Fallback for legacy single value format
+  return heroImageOffset || 0
+}
+
 const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
   const [activeTab, setActiveTab] = useState(0)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800)
 
   useEffect(() => {
     setActiveTab(0)
   }, [character])
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 //checks if NOT character or tabs exist and returns null if so. Safety check. 
   if (!character) return null
   if (!character.tabs || character.tabs.length === 0) return null
@@ -36,7 +55,7 @@ const CharacterGuide = forwardRef(({ character, onClose }, ref) => {
             src={`./champion-pics/${character.name.toLowerCase()}2.png`} 
             alt={character.name}
             className="hero-character-image"
-            style={{ objectPosition: `center ${character.heroImageOffset || 0}px` }}
+            style={{ objectPosition: `center ${getHeroImageOffset(character.heroImageOffset, isMobile)}px` }}
           />
           <div className="hero-overlay"></div>
         </div>

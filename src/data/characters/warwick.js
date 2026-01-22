@@ -1,6 +1,6 @@
 export const warwick = {
   name: 'Warwick',
-  heroImageOffset: -400,
+  heroImageOffset: { desktop: -400, mobile: -95 },
   tabs: [
     {
       id: 'key_moves',

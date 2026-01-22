@@ -1,6 +1,6 @@
 export const caitlyn = {
   name: 'Caitlyn',
-  heroImageOffset: -60,
+  heroImageOffset: { desktop: -60, mobile: -12 },
   tabs: [
     {
       id: 'key_moves',

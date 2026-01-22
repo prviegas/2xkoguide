@@ -1,6 +1,6 @@
 export const yasuo = {
   name: 'Yasuo',
-  heroImageOffset: -365, // Vertical offset in px for hero banner image (negative = up, positive = down)
+  heroImageOffset: { desktop: -365, mobile: -100 }, // Vertical offset in px for hero banner image (negative = up, positive = down)
   tabs: [
     {
       id: 'key_moves',

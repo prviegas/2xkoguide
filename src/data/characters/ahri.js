@@ -1,6 +1,6 @@
 export const ahri = {
   name: 'Ahri',
-  heroImageOffset: -104, // Vertical offset in px for hero banner image (negative = up, positive = down)
+  heroImageOffset: { desktop: -104, mobile: -27 }, // Vertical offset in px for hero banner image (negative = up, positive = down)
   tabs: [
    {
         id: 'key_moves',
