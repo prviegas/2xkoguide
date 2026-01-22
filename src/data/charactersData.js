@@ -17,4 +17,4 @@
  */
 
 // Re-export everything from the characters folder
-export { charactersData, ahri, braum, darius, ekko, illaoi, jinx, vi, yasuo } from './characters/index.js';
+export { charactersData, ahri, blitzcrank, braum, caitlyn, darius, ekko, illaoi, jinx, teemo, vi, warwick, yasuo } from './characters/index.js';
