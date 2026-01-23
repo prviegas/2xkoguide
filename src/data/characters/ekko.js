@@ -32,13 +32,16 @@ export const ekko = {// Ekko Data Starts Here
           { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/combos/ekko-combo-3.mp4' },
           { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-4.png', video: 'videos/ekko/combos/ekko-combo-4.mp4' },
         ],
+        description2: [
+        ],
         comboEnders: [
-          { purpose: 'Oki', numericNotation: 'j.H j.S2 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
-          { purpose: 'Limit Strike', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
-          { purpose: 'Max Dmg', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
-          { purpose: 'Assist Setup', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
-          { purpose: 'Tag launcher', numericNotation: 'j.H j.S2 TAG', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
-        ]
+          { purpose: 'Limit Strike into S2 super', numericNotation: 'j.S2 2S1 S2+L', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
+          { purpose: 'Tag launcher', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
+        ],
+        description3: [
+          'Generally Ekko wants to end his combos in a limit strike, or another way where he can safely set up his S2 super for continued pressure.',
+          "His BNB route also naturally leads to a tag launcher (2T) which is a great way to switch to your other character if needed.",
+        ],
       },
       {
         id: 'team_synergies',

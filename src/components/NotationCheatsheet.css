@@ -183,3 +183,17 @@
   transform: scale(1.15);
   color: #d4f57e;
 }
+
+.notation-btn-wrapper {
+  margin-bottom: 15px;
+}
+
+.combo-description-section {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.combo-enders-heading {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}

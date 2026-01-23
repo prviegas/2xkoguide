@@ -26,6 +26,8 @@ function SoloCombosTab({ character, tabData }) {
   }
 
   const description = Array.isArray(tabData.description) ? tabData.description : []
+  const description2 = Array.isArray(tabData.description2) ? tabData.description2 : []
+  const description3 = Array.isArray(tabData.description3) ? tabData.description3 : []
   const combos = Array.isArray(tabData.combos) ? tabData.combos : []
   const comboEnders = Array.isArray(tabData.comboEnders) ? tabData.comboEnders : []
 
@@ -35,7 +37,7 @@ function SoloCombosTab({ character, tabData }) {
         <p key={index}>{paragraph}</p>
       ))}
       
-      <div style={{ marginBottom: '15px' }}>
+      <div className="notation-btn-wrapper">
         <button 
           className="notation-help-btn"
           onClick={() => setIsCheatsheetOpen(true)}
@@ -89,9 +91,17 @@ function SoloCombosTab({ character, tabData }) {
       </table>
       )}
 
+      {description2.length > 0 && (
+        <div className="combo-description-section">
+          {description2.map((paragraph, index) => (
+            <p key={`desc2-${index}`}>{paragraph}</p>
+          ))}
+        </div>
+      )}
+
       {comboEnders.length > 0 && (
         <>
-          <h3 style={{ marginTop: '30px', marginBottom: '15px' }}>Combo Enders</h3>
+          <h3 className="combo-enders-heading">Combo Enders</h3>
           <table className="moves-table solo-combos-table">
             <thead>
               <tr>
@@ -130,6 +140,14 @@ function SoloCombosTab({ character, tabData }) {
           </tbody>
         </table>
         </>
+      )}
+
+      {description3.length > 0 && (
+        <div className="combo-description-section">
+          {description3.map((paragraph, index) => (
+            <p key={`desc3-${index}`}>{paragraph}</p>
+          ))}
+        </div>
       )}
 
       {videoModal.isOpen && (
