@@ -83,14 +83,30 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Medium',
             difficultyClass: 'medium',
             overview: [
-              'This matchup is all about mobility versus mobility. Both Ekko and Ahri have strong movement options and burst damage, making it a skill-based matchup where positioning and timing are crucial.',
-              'The key to winning this matchup is respecting Ahri\'s Charm (E) while looking for opportunities to punish her cooldowns. Use your Parallel Convergence (W) to zone her during Spirit Rush, and remember that your ultimate can dodge her charm if timed correctly. Play around her charm cooldown and you\'ll find openings to land your burst combo.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Mobility vs Mobility matchup - whoever controls tempo wins',
-              'Whoever lands CC first usually wins the trade',
-              'Play around her charm cooldown window',
-              'Respect her burst damage when her passive is stacked'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
+            ],
+            videos: [
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
+              { id: 'F3x1-NNy6h4' },
+            ]
+          },
+          'Blitzcrank': {
+            difficulty: 'Medium',
+            difficultyClass: 'medium',
+            overview: [
+              'Placeholder overview'
+            ],
+            keyPoints: [
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: [
               { id: 'F3x1-NNy6h4' },
@@ -103,14 +119,25 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Hard',
             difficultyClass: 'hard',
             overview: [
-              'Braum is a challenging matchup for Ekko due to his defensive capabilities and crowd control. His shield can block your Timewinder projectiles, and his passive stacks can lead to devastating stuns.',
-              'The key to this matchup is patience and positioning. Bait out his shield before committing with your full combo, and use your mobility to reposition around his shield angle. Avoid extended trades when his passive stacks are on you, and look for opportunities to catch him when he\'s separated from his team.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Tank matchup - very hard to burst down',
-              'His shield negates most of your poke damage',
-              'Avoid fighting with passive stacks on you',
-              'Best to catch him isolated from his team'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
+            ],
+            videos: []
+          },
+          'Caitlyn': {
+            difficulty: 'Hard',
+            difficultyClass: 'hard',
+            overview: [
+              'Placeholder overview'
+            ],
+            keyPoints: [
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: []
           },
@@ -118,29 +145,25 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Medium',
             difficultyClass: 'medium',
             overview: [
-              'Ekko has the advantage in this matchup thanks to his superior range and mobility. The key is maintaining distance to avoid Darius\' pull (E) and the outer ring of his Q, which deal the most damage.',
-              'Use Phase Dive (E) to kite him effectively and never let him stack his passive bleed on you. If you make a mistake and take a bad trade, your ultimate is perfect for resetting the situation. Poke him down from distance and use your mobility to avoid his skillshots while chipping away at his health.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Range and mobility advantage is key to winning',
-              'Never fight in melee range with his passive stacked',
-              'Poke him down safely from distance',
-              'Your ultimate can undo bad trades'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: []
           },
           'Illaoi': {
             difficulty: 'Medium',
             difficultyClass: 'medium',
-            overview: [
-              'This is a favorable matchup for Ekko as your mobility counters Illaoi\'s immobile, area-control playstyle. The most important thing is dodging her Test of Spirit (E) - if she misses this ability, she becomes much less threatening.',
-              'Use your superior mobility to avoid her tentacle slams and never fight when she uses her ultimate. Your W can zone her and force her to respect your space. Employ hit-and-run tactics, darting in for damage and getting out before she can retaliate. Never stand near her tentacles as they provide most of her damage and healing.'
+           overview: [
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Mobility vs Immobile matchup heavily favors Ekko',
-              'Dodging her E makes her much less threatening',
-              'Never stand near multiple tentacles',
-              'Hit and run tactics are extremely effective'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: [
               { id: 'illaekko' }
@@ -150,14 +173,25 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Easy',
             difficultyClass: 'easy',
             overview: [
-              'This is one of Ekko\'s easiest matchups. Jinx lacks mobility and escape tools, making her an ideal target for your assassination combo. Your E and R combo can easily close the gap and eliminate her.',
-              'The only thing to watch out for is her flame chompers (E) when you\'re diving - try to bait them out first or dash around them. She has high damage output if left unchecked, but your burst damage can eliminate her before she has time to kite. This matchup heavily favors aggressive play from Ekko.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Very favorable matchup for Ekko',
-              'She completely lacks escape tools',
-              'Your assassination combo works perfectly on her',
-              'Watch for her traps when diving'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
+            ],
+            videos: []
+          },
+          'Teemo': {
+            difficulty: 'Easy',
+            difficultyClass: 'easy',
+            overview: [
+              'Placeholder overview'
+            ],
+            keyPoints: [
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: []
           },
@@ -165,14 +199,25 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Hard',
             difficultyClass: 'hard',
             overview: [
-              'Vi is a difficult matchup for Ekko because of her targeted ultimate that can lock you down. Once she commits to you, it\'s very difficult to escape her engage pattern and follow-up damage.',
-              'The best strategy is to save your ultimate for after she engages on you, allowing you to return to your previous position and undo the damage. Your W can interrupt her Q dash if placed well and predicted correctly. Don\'t try to trade when her passive shield is up, and play around her ultimate cooldown. Positioning is crucial in this matchup.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'She can lock you down with targeted CC',
-              'Very difficult to escape once she commits',
-              'Save your R for after her engage',
-              'Play around her ultimate cooldown'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
+            ],
+            videos: []
+          },
+          'Warwick': {
+            difficulty: 'Hard',
+            difficultyClass: 'hard',
+            overview: [
+              'Placeholder overview'
+            ],
+            keyPoints: [
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: []
           },
@@ -180,14 +225,12 @@ export const ekko = {// Ekko Data Starts Here
             difficulty: 'Medium',
             difficultyClass: 'medium',
             overview: [
-              'This is a skill-based matchup where both champions have significant outplay potential. Yasuo\'s Wind Wall can block your Timewinder (Q), so timing and ability management are crucial.',
-              'Try to bait out his Wind Wall before committing your important abilities, and save your Q for after his wall expires. Your W stun can interrupt his dash patterns if you predict his movement correctly. Whoever controls the tempo of the fight typically wins. Your ultimate can negate his all-in attempts, giving you a defensive option when he commits.'
+              'Placeholder overview'
             ],
             keyPoints: [
-              'Even skill matchup - both have outplay potential',
-              'Wind Wall timing is absolutely crucial',
-              'Whoever controls tempo wins the trades',
-              'Your ultimate negates his all-in attempts'
+              'Placeholder keypoint 1',
+              'Placeholder keypoint 2',
+              'Placeholder keypoint 3',
             ],
             videos: [
               { id: '8qmI6OieGnI' }
