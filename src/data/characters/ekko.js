@@ -9,7 +9,7 @@ export const ekko = {// Ekko Data Starts Here
          
         ],
         moves: [
-          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko1.png', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral', video: 'videos/ekko/illaekko.mp4' },
+          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko1.png', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral', video: 'videos/ekko/key-moves/ekko-key1.mp4' },
           { numericNotation: '5M', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko2.png', description: 'One of the best 5Ms in the game. Reaches far and fast', video: 'videos/ekko/illaekko.mp4' },
           { numericNotation: 'S1 and 2S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko3.png', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.', video: 'videos/ekko/illaekko.mp4' },
           { numericNotation: 'j.66', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko4.png', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles', video: 'videos/ekko/illaekko.mp4' },
@@ -24,10 +24,10 @@ export const ekko = {// Ekko Data Starts Here
 
         ],
         combos: [
-          { purpose: 'BnB', numericNotation: 'M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] j.d.S1 S2 H 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
-          { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
-          { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/ekko-combo-3.mp4' },
-          { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-4.png', video: 'videos/ekko/ekko-combo-4.mp4' },
+          { purpose: 'BnB', numericNotation: 'M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] j.d.S1 S2 H 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/combos/ekko-combo-1.mp4' },
+          { purpose: 'Corner Combo', numericNotation: 'M H S2 S2 S1+L 66 j.H j.S2 H 2H j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/combos/ekko-combo-2.mp4' },
+          { purpose: 'Side Swap', numericNotation: 'M H 2H j.M j.H j.S2 66 L M H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-3.png', video: 'videos/ekko/combos/ekko-combo-3.mp4' },
+          { purpose: 'Anti Air starter', numericNotation: '2H j.M j.H 66 j.H j.S2 2M 5M 5H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-4.png', video: 'videos/ekko/combos/ekko-combo-4.mp4' },
         ],
         comboEnders: [
           { purpose: 'Oki', numericNotation: 'j.H j.S2 2T', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
@@ -220,15 +220,6 @@ export const ekko = {// Ekko Data Starts Here
               { id: '4fIa3CZNLZI' }
             ]
           },
-          {
-            name: 'Player3',
-            description: 'description',
-            socials: {
-              twitter: 'https://x.com/HikariNYC',
-              youtube: 'https://youtube.com/@player3',
-              twitch: 'https://twitch.tv/player3',
-            }
-          }
         ]
       },
       {
@@ -236,17 +227,14 @@ export const ekko = {// Ekko Data Starts Here
         title: 'Guides',
         videos: [
           { 
-            id: 'F3x1-NNy6h4', 
+            id: 'ZP_cp2Jl57k', 
           },
           { 
-            id: '8qmI6OieGnI', 
+            id: 'linj99CyhAg', 
           },
           { 
-            id: 'gCDtZgLubqw', 
+            id: 'zA72QlZbKjY', 
           },
-          { 
-            id: 'K6YIcxSAKz8', 
-          }
         ],
         textGuides: [
           {
