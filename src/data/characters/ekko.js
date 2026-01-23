@@ -6,15 +6,18 @@ export const ekko = {// Ekko Data Starts Here
         id: 'key_moves',
         title: 'Key Moves',
         description: [
-         
+          "Ekko has a versatile moveset that can be used creatively both in offense and defense.",
+          "Ekko's S1 (Timewinder) is the best projectile in the game. It controls space for a long time and leads to easy combo conversions on hit. You can also hit your own (or your opponent's) Timewinder with Ekko's heavy moves to throw it at your opponent. ",
+          "All of his S2 moves leave a clone behind, which later can be reactivated to rewind Ekko's position to the clone's location and attack. By charging the initial S2 moves, you leave behind a volatile clone, which gives you more control to your follow up after rewinding.",
+          "Overall, his normals are very solid, with a special mention to his 5M, which has great range and speed.",
         ],
         moves: [
-          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko1.png', description: 'Rewind is a core mechanic in most of his combos and a tool for being safe in neutral', video: 'videos/ekko/key-moves/ekko-key1.mp4' },
-          { numericNotation: '5M', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko2.png', description: 'One of the best 5Ms in the game. Reaches far and fast', video: 'videos/ekko/illaekko.mp4' },
-          { numericNotation: 'S1 and 2S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko3.png', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.', video: 'videos/ekko/illaekko.mp4' },
-          { numericNotation: 'j.66', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko4.png', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles', video: 'videos/ekko/illaekko.mp4' },
-          { numericNotation: 'j.2H', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko5.png', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo', video: 'videos/ekko/illaekko.mp4' },
-        { numericNotation: '6S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko6.png', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile', video: 'videos/ekko/illaekko.mp4' }
+          { numericNotation: 'S2, 2S2 and j.S2', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko1.png', description: 'Replay is a core mechanic in most of his combos and a tool for being safe in neutral', video: 'videos/ekko/key-moves/ekko-key1.mp4' },
+          { numericNotation: '5M', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko2.png', description: 'One of the best 5Ms in the game. Reaches far and fast', video: 'videos/ekko/key-moves/ekko-key2.mp4' },
+          { numericNotation: 'S1 and 2S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko3.png', description: 'Timewinder is an important option for covering the screen on the ground or against jump ins. Remember you can hit your timewinder with Ekko\'s heavy moves to throw it at your opponent.', video: 'videos/ekko/key-moves/ekko-key3.mp4' },
+          { numericNotation: 'j.66', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko4.png', description: 'Amazing air mobility tool, useful for baiting anti airs and for crossing up at hard to predict angles', video: 'videos/ekko/key-moves/ekko-key4.mp4' },
+          { numericNotation: 'j.2H', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko5.png', description: 'By itself or with his air dash, this move can be an easy crossup overhead that goes into a full combo', video: 'videos/ekko/key-moves/ekko-key5.mp4' },
+        { numericNotation: '6S1', notation: 'blabla', notationImage: '/key-moves-notation/ekko/ekko6.png', description: 'Risky move to use alone, but using it right before tagging out is an easy way to get ekko in with freestyle or just use him as a fake projectile', video: 'videos/ekko/key-moves/ekko-key6.mp4' }
         ]
       },
       {
@@ -236,52 +239,6 @@ export const ekko = {// Ekko Data Starts Here
             id: 'zA72QlZbKjY', 
           },
         ],
-        textGuides: [
-          {
-            title: 'Ekko Fundamentals Guide',
-            author: 'Community',
-            sections: [
-              {
-                heading: 'Overview',
-                content: 'Ekko is a high-mobility rushdown character who excels at controlling space with his Timewinder and punishing opponents with explosive combos. His unique Rewind mechanic allows him to reset to a previous position, making him incredibly slippery and hard to pin down.'
-              },
-              {
-                heading: 'Gameplan',
-                content: 'Your primary goal is to use your superior air mobility (j.66) and Timewinder to control neutral and find openings. Once you land a hit, convert into high-damage combos using Rewind extensions. In pressure situations, mix up your offense with overheads (j.2H) and use Rewind to stay safe.'
-              },
-              {
-                heading: 'Strengths & Weaknesses',
-                content: 'Strengths: Excellent mobility, strong mixup game, high combo damage, great at covering space. Weaknesses: Requires good execution, Rewind management is crucial, can struggle against strong anti-air characters.'
-              }
-            ],
-            tips: [
-              'Always keep track of your Rewind position - it\'s your safety net',
-              'Use j.66 to bait anti-airs and cross up opponents',
-              'Hitting your Timewinder with heavy attacks sends it forward - use this to extend pressure',
-              '6S1 into tag is a great way to get Ekko in safely',
-              'Your 5M is one of the best in the game - abuse its range in neutral'
-            ]
-          },
-          {
-            title: 'Ekko Combo Theory',
-            author: 'FGC Labs',
-            sections: [
-              {
-                heading: 'Combo Structure',
-                content: 'Ekko\'s combos typically follow this structure: Starter > Rewind Extension > Launcher > Air Series > Ender. The key is learning when to use your Rewind to extend combos and when to save it for safety.'
-              },
-              {
-                heading: 'Damage Optimization',
-                content: 'For maximum damage, always look to land your Timewinder during combos and use it to extend. Corner combos allow for significantly more damage due to easier juggles and the ability to loop certain sequences.'
-              }
-            ],
-            tips: [
-              'BnB combo: M H S2 S2 S1+L 2H S1 2S2 [2H] [j.H] j.d.S1 S2 H 2T',
-              'For corner carry, use j.S2 enders to push opponents to the wall',
-              'Tag cancel your air series for maximum damage with your partner'
-            ]
-          }
-        ]
       },
     ]
   }
