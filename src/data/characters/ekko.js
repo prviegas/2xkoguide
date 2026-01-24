@@ -35,8 +35,9 @@ export const ekko = {// Ekko Data Starts Here
         description2: [
         ],
         comboEnders: [
-          { purpose: 'Limit Strike into S2 super', numericNotation: 'j.S2 2S1 S2+L', notationImage: '/combo-notation/ekko/ekko-combo-1.png', video: 'videos/ekko/ekko-combo-1.mp4' },
-          { purpose: 'Tag launcher', numericNotation: 'H 2H j.M j.H j.S2', notationImage: '/combo-notation/ekko/ekko-combo-2.png', video: 'videos/ekko/ekko-combo-2.mp4' },
+          { purpose: 'Limit Strike into S2 super', numericNotation: 'j.S2 2S1 S2+L', notationImage: '/combo-notation/ekko/combo-enders/ekko-ender1.png', video: 'videos/ekko/combo-enders/ekko-ender1.mp4' },
+          { purpose: '6S1 into S2 super', numericNotation: '6S1 S2+L', notationImage: '/combo-notation/ekko/combo-enders/ekko-ender2.png', video: 'videos/ekko/combo-enders/ekko-ender2.mp4' },
+          { purpose: 'Tag launcher', numericNotation: '2M M H 2T', notationImage: '/combo-notation/ekko/combo-enders/ekko-ender3.png', video: 'videos/ekko/combo-enders/ekko-ender3.mp4' },
         ],
         description3: [
           'Generally Ekko wants to end his combos in a limit strike, or another way where he can safely set up his S2 super for continued pressure.',
